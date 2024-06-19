@@ -131,7 +131,7 @@ export const Header = () => (
       <div className="mx-auto flex max-w-section items-center gap-6">
         <ul className="flex grow gap-6">
           {contacts.map((contact) => (
-            <li>
+            <li key={contact.text}>
               <Link href={contact.link} className="flex items-center gap-3">
                 {contact.icon}
                 <span className="text-xs">{contact.text}</span>
@@ -142,7 +142,7 @@ export const Header = () => (
 
         <ul className="flex items-center gap-1">
           {socialMedias.map((socialMedia) => (
-            <li>
+            <li key={socialMedia.link}>
               <Link href={socialMedia.link} target="_blank">
                 {socialMedia.icon}
               </Link>
@@ -152,7 +152,7 @@ export const Header = () => (
 
         <ul className="flex items-center gap-2">
           {languages.map((language) => (
-            <li className="flex gap-2">
+            <li className="flex gap-2" key={language.text}>
               <Image
                 className="shrink-0"
                 src={language.imgSrc}
@@ -180,7 +180,7 @@ export const Header = () => (
 
         <ul className="text-orange flex items-center gap-3">
           {menuItems.map((item) => (
-            <li>
+            <li key={item.text}>
               <Link
                 className="p-2 text-sm leading-7 tracking-[0.05em] transition-all hover:text-[#fe6802]"
                 href={item.link}

@@ -101,7 +101,7 @@ export const TransportationSection = () => (
 
     <div className="-mx-8 grid grid-cols-4 divide-x-[1px] divide-dashed divide-[#E0E0E0]">
       {transportationTypes.map((type) => (
-        <div className="p-8">
+        <div className="p-8" key={type.heading}>
           {type.icon}
           <h3 className="text-h3 mt-4 text-app-orange">{type.heading}</h3>
           <p className="mt-4 text-[15px] leading-5 tracking-[0.1em] text-white">

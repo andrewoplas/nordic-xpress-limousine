@@ -47,6 +47,7 @@ export const FeaturesSection = () => (
   <section className="mx-auto flex max-w-section flex-col gap-28 py-20">
     {features.map((feature) => (
       <div
+        key={feature.heading}
         className={cn("grid items-center gap-16", {
           "grid-cols-[1fr_480px]": feature.isReversed,
           "grid-cols-[480px_1fr]": !feature.isReversed,
