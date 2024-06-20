@@ -14,7 +14,15 @@
 }
 
 @layer utilities {
+  .text-h2 {
+    @apply text-[28px] leading-snug lg:text-[32px];
+  }
+
   .text-h3 {
-    @apply text-2xl leading-[1.4em];
+    @apply text-xl leading-[1.4em] lg:text-2xl;
+  }
+
+  .px-default {
+    @apply px-5 md:px-6;
   }
 }
