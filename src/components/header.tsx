@@ -136,7 +136,7 @@ export const Header = () => {
 
   return (
     <>
-      <nav className="px-default hidden bg-black py-6 text-white md:block">
+      <nav className="px-default hidden bg-black py-4 text-white md:block">
         <div className="mx-auto flex max-w-section items-center gap-6">
           <ul className="flex grow gap-6">
             {contacts.map((contact) => (
@@ -188,7 +188,7 @@ export const Header = () => {
         </div>
       </nav>
 
-      <nav className="px-default sticky top-0 z-[41] bg-app-gray py-5 text-white lg:py-6">
+      <nav className="px-default sticky top-0 z-[41] bg-app-gray py-4 text-white">
         <div className="mx-auto flex max-w-section items-center justify-between gap-6">
           <Link href="/">
             <Image
