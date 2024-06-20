@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Nordic Xpress Limousine Service",
   description:
     "Affordable transportation that doesn't compromise on quality. Enjoy reliable and cost-effective services today",
+  openGraph: {
+    images: "/opengraph-image.jpg",
+  },
 };
 
 export const viewport: Viewport = {
