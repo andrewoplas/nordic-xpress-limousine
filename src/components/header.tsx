@@ -49,6 +49,7 @@ const contacts = [
 const socialMedias = [
   {
     link: "https://www.facebook.com/profile.php?id=61556833815560",
+    label: "Facebook",
     icon: (
       <svg
         width="30"
@@ -67,6 +68,7 @@ const socialMedias = [
   },
   {
     link: "https://www.linkedin.com/company/nordic-xpress-limousine-service",
+    label: "LinkedIn",
     icon: (
       <svg
         width="30"
@@ -149,9 +151,10 @@ export const Header = () => {
 
           <ul className="flex items-center gap-1">
             {socialMedias.map((socialMedia) => (
-              <li key={socialMedia.link}>
+              <li key={socialMedia.label}>
                 <Link
                   href={socialMedia.link}
+                  aria-label={socialMedia.label}
                   target="_blank"
                   className="transition-all hover:saturate-150"
                 >
@@ -289,27 +292,29 @@ export const Header = () => {
             </button>
           </li>
 
-          <ul className="mt-4 flex gap-8 text-white">
-            {languages.map((language) => (
-              <li key={language.text}>
-                <button
-                  aria-label={`translate into ${language.text}`}
-                  className="group flex items-center gap-2"
-                >
-                  <Image
-                    className="shrink-0"
-                    src={language.imgSrc}
-                    alt={language.imgAlt}
-                    width={16}
-                    height={11}
-                  />
-                  <span className="leading-none transition-all group-hover:text-[#fe6802]">
-                    {language.text}
-                  </span>
-                </button>
-              </li>
-            ))}
-          </ul>
+          <li>
+            <ul className="mt-4 flex gap-8 text-white">
+              {languages.map((language) => (
+                <li key={language.text}>
+                  <button
+                    aria-label={`translate into ${language.text}`}
+                    className="group flex items-center gap-2"
+                  >
+                    <Image
+                      className="shrink-0"
+                      src={language.imgSrc}
+                      alt={language.imgAlt}
+                      width={16}
+                      height={11}
+                    />
+                    <span className="leading-none transition-all group-hover:text-[#fe6802]">
+                      {language.text}
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </li>
         </ul>
       </div>
     </>

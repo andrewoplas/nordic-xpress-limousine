@@ -5,7 +5,7 @@ import imgHero from "/public/images/mercedes-cars.png";
 export const HeroSection = () => (
   <section className="relative overflow-hidden bg-[#A3A7AD] pb-0 pt-16 md:py-24">
     <div className="px-default relative z-[1] mx-auto flex min-h-[40dvh] max-w-section">
-      <div className="flex flex-col items-center gap-20 md:flex-row md:gap-12">
+      <div className="flex flex-col items-center gap-20 md:flex-row md:gap-12 w-full">
         <div className="flex shrink-0 flex-col items-center md:items-start">
           <h1
             className="flex flex-col gap-1 text-center text-3xl font-normal text-white md:gap-4 md:text-left"
