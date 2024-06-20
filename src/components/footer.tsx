@@ -196,6 +196,7 @@ export const Footer = () => (
               ></input>
               <button
                 type="submit"
+                aria-label="submit"
                 className="flex aspect-square size-14 h-full shrink-0 items-center justify-center rounded-full bg-app-orange"
               >
                 <svg
