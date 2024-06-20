@@ -48,7 +48,7 @@ const contacts = [
 
 const socialMedias = [
   {
-    link: "/",
+    link: "https://www.facebook.com/profile.php?id=61556833815560",
     icon: (
       <svg
         width="30"
@@ -66,7 +66,7 @@ const socialMedias = [
     ),
   },
   {
-    link: "/",
+    link: "https://www.linkedin.com/company/nordic-xpress-limousine-service",
     icon: (
       <svg
         width="30"
@@ -164,7 +164,10 @@ export const Header = () => {
           <ul className="flex items-center gap-3">
             {languages.map((language) => (
               <li key={language.text}>
-                <button className="group flex items-center gap-2">
+                <button
+                  aria-label={`translate into ${language.text}`}
+                  className="group flex items-center gap-2"
+                >
                   <Image
                     className="shrink-0"
                     src={language.imgSrc}
@@ -207,7 +210,10 @@ export const Header = () => {
             ))}
 
             <li className="hidden md:block xl:ml-3">
-              <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7">
+              <button
+                aria-label="book now"
+                className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
+              >
                 BOOK NOW
               </button>
             </li>
@@ -218,6 +224,7 @@ export const Header = () => {
                   setIsMobileMenuOpen((currentValue) => !currentValue)
                 }
                 className="flex flex-col justify-center"
+                aria-label="mobile menu icon"
               >
                 <span
                   className={cn(
@@ -274,7 +281,10 @@ export const Header = () => {
           ))}
 
           <li>
-            <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7">
+            <button
+              aria-label="book now"
+              className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
+            >
               BOOK NOW
             </button>
           </li>
@@ -282,7 +292,10 @@ export const Header = () => {
           <ul className="mt-4 flex gap-8 text-white">
             {languages.map((language) => (
               <li key={language.text}>
-                <button className="group flex items-center gap-2">
+                <button
+                  aria-label={`translate into ${language.text}`}
+                  className="group flex items-center gap-2"
+                >
                   <Image
                     className="shrink-0"
                     src={language.imgSrc}

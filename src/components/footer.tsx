@@ -26,8 +26,8 @@ const informationMenu = [
 export const Footer = () => (
   <>
     <footer className="bg-app-gray">
-      <div className="px-default mx-auto grid max-w-section gap-16 lg:gap-4 text-center md:text-left md:grid-cols-2 lg:grid-cols-4 py-20 text-white">
-        <div className="flex md:block items-center justify-center flex-col">
+      <div className="px-default mx-auto grid max-w-section gap-16 py-20 text-center text-white md:grid-cols-2 md:text-left lg:grid-cols-4 lg:gap-4">
+        <div className="flex flex-col items-center justify-center md:block">
           <Heading>Contact</Heading>
 
           <div className="space-y-2 text-left">
@@ -156,7 +156,7 @@ export const Footer = () => (
           <div>
             <Heading>Betalingsformer</Heading>
 
-            <div className="flex gap-[3px] flex-wrap justify-center md:justify-start">
+            <div className="flex flex-wrap justify-center gap-[3px] md:justify-start">
               <Image
                 src={imgPaymentApplePay}
                 alt="logo of Apple Pay"
@@ -188,12 +188,15 @@ export const Footer = () => (
           <div>
             <Heading>Abboner</Heading>
 
-            <div className="flex gap-2 max-w-[350px] mx-auto md:mx-0">
+            <div className="mx-auto flex max-w-[350px] gap-2 md:mx-0">
               <input
                 className="grow rounded-full bg-white p-4 text-black"
                 placeholder="Din email"
               ></input>
-              <button className="flex aspect-square size-14 h-full shrink-0 items-center justify-center rounded-full bg-app-orange">
+              <button
+                type="submit"
+                className="flex aspect-square size-14 h-full shrink-0 items-center justify-center rounded-full bg-app-orange"
+              >
                 <svg
                   className="w-8"
                   width="10"
@@ -215,14 +218,14 @@ export const Footer = () => (
     </footer>
 
     <div className="bg-black py-6">
-      <div className="px-default mx-auto flex-col lg:flex-row flex max-w-section items-center justify-between gap-4">
-        <span className="text-app-gray text-center lg:text-left">
+      <div className="px-default mx-auto flex max-w-section flex-col items-center justify-between gap-4 lg:flex-row">
+        <span className="text-center text-app-gray lg:text-left">
           © 2024 Copyright Nordic Xpress Limousine Service. All Rights Reserved
         </span>
 
         <div className="flex items-center gap-2">
           <svg
-          className="h-6 lg:h-8"
+            className="h-6 lg:h-8"
             viewBox="0 0 155 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

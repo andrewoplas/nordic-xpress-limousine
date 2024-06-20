@@ -121,7 +121,7 @@ export const TransportationSection = () => (
         Få mere information om vores øvrige tilgængelige services
       </h3>
 
-      <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-6 md:px-7 py-2 md:py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150">
+      <button aria-label="book now" className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-6 md:px-7 py-2 md:py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150">
         LÆS MERE
       </button>
     </div>

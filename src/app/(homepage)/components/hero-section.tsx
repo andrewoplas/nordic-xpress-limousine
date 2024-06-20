@@ -18,7 +18,10 @@ export const HeroSection = () => (
             Limousine Service
           </h1>
 
-          <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] mt-8 rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7">
+          <button
+            aria-label="book now"
+            className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] mt-8 rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
+          >
             BOOK NOW
           </button>
         </div>
