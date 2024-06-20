@@ -206,7 +206,7 @@ export const Header = () => {
               </li>
             ))}
 
-            <li className="hidden md:block lg:ml-3">
+            <li className="hidden md:block xl:ml-3">
               <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7">
                 BOOK NOW
               </button>
@@ -247,46 +247,6 @@ export const Header = () => {
                   )}
                 ></span>
               </button>
-
-              {/* <button
-                onClick={() =>
-                  setIsMobileMenuOpen((currentValue) => !currentValue)
-                }
-              >
-                {isMobileMenuOpen ? (
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 18L18 6M6 6L18 18"
-                      stroke="#FFF"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.75 6.75H20.25M3.75 12H12M3.75 17.25H20.25"
-                      stroke="#FFF"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                )}
-              </button> */}
             </li>
           </ul>
         </div>
