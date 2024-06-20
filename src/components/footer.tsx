@@ -158,13 +158,8 @@ export const Footer = () => (
 
             <div className="flex flex-wrap justify-center gap-[3px] md:justify-start">
               <Image
-                src={imgPaymentApplePay}
-                alt="logo of Apple Pay"
-                className="w-12 rounded-md"
-              />
-              <Image
-                src={imgPaymentGooglePay}
-                alt="logo of Google Pay"
+                src={imgPaymentVisa}
+                alt="logo of Visa"
                 className="w-12 rounded-md"
               />
               <Image
@@ -172,14 +167,20 @@ export const Footer = () => (
                 alt="logo of Mastercard"
                 className="w-12 rounded-md"
               />
+
               <Image
                 src={imgPaymentMobilePay}
                 alt="logo of Mobile Pay"
                 className="w-12 rounded-md"
               />
               <Image
-                src={imgPaymentVisa}
-                alt="logo of Visa"
+                src={imgPaymentApplePay}
+                alt="logo of Apple Pay"
+                className="w-12 rounded-md"
+              />
+              <Image
+                src={imgPaymentGooglePay}
+                alt="logo of Google Pay"
                 className="w-12 rounded-md"
               />
             </div>
