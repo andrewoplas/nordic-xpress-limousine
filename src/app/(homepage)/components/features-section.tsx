@@ -44,16 +44,20 @@ const features = [
 ];
 
 export const FeaturesSection = () => (
-  <section className="mx-auto flex max-w-section flex-col gap-28 py-20">
+  <section className="px-default mx-auto flex max-w-section flex-col gap-24 md:gap-28 py-20">
     {features.map((feature) => (
       <div
         key={feature.heading}
-        className={cn("grid items-center gap-16", {
-          "grid-cols-[1fr_480px]": feature.isReversed,
-          "grid-cols-[480px_1fr]": !feature.isReversed,
+        className={cn("grid grid-cols-1 items-center gap-10 md:gap-14 lg:gap-16", {
+          "md:grid-cols-2 lg:grid-cols-[1fr_480px]": feature.isReversed,
+          "md:grid-cols-2 lg:grid-cols-[480px_1fr]": !feature.isReversed,
         })}
       >
-        <div className={cn({ "order-last": feature.isReversed })}>
+        <div
+          className={cn("max-md:order-last", {
+            "md:order-last": feature.isReversed,
+          })}
+        >
           <FeatureContent
             heading={feature.heading}
             description={feature.description}
@@ -81,8 +85,10 @@ const FeatureContent = ({
   description: string;
 }) => (
   <>
-    <h2 className="text-h3 font-semibold text-app-orange">{heading}</h2>
-    <div className="mt-5 text-[15px] leading-5 tracking-[0.1em] text-white">
+    <h2 className="text-h3 text-center font-semibold text-app-orange md:text-left">
+      {heading}
+    </h2>
+    <div className="mt-5 text-center text-[15px] leading-5 tracking-[0.1em] text-white md:text-left">
       <p>{description}</p>
 
       <Link
