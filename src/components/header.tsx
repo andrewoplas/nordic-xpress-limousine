@@ -1,5 +1,9 @@
+"use client";
+
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const contacts = [
   {
@@ -125,64 +129,183 @@ const menuItems = [
   },
 ];
 
-export const Header = () => (
-  <header>
-    <nav className="bg-black p-6 text-white">
-      <div className="mx-auto flex max-w-section items-center gap-6">
-        <ul className="flex grow gap-6">
-          {contacts.map((contact) => (
-            <li key={contact.text}>
-              <Link href={contact.link} className="flex items-center gap-3">
-                {contact.icon}
-                <span className="text-xs">{contact.text}</span>
-              </Link>
+export const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  return (
+    <>
+      <nav className="px-default hidden bg-black py-6 text-white md:block">
+        <div className="mx-auto flex max-w-section items-center gap-6">
+          <ul className="flex grow gap-6">
+            {contacts.map((contact) => (
+              <li key={contact.text}>
+                <Link href={contact.link} className="flex items-center gap-3">
+                  {contact.icon}
+                  <span className="text-xs">{contact.text}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <ul className="flex items-center gap-1">
+            {socialMedias.map((socialMedia) => (
+              <li key={socialMedia.link}>
+                <Link
+                  href={socialMedia.link}
+                  target="_blank"
+                  className="transition-all hover:saturate-150"
+                >
+                  {socialMedia.icon}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <ul className="flex items-center gap-3">
+            {languages.map((language) => (
+              <li key={language.text}>
+                <button className="group flex items-center gap-2">
+                  <Image
+                    className="shrink-0"
+                    src={language.imgSrc}
+                    alt={language.imgAlt}
+                    width={16}
+                    height={11}
+                  />
+                  <span className="text-xs leading-none transition-all group-hover:text-[#fe6802]">
+                    {language.text}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+
+      <nav className="px-default sticky top-0 z-[41] bg-app-gray py-5 text-white lg:py-6">
+        <div className="mx-auto flex max-w-section items-center justify-between gap-6">
+          <Link href="/">
+            <Image
+              src="/images/site-logo.png"
+              alt="site logo"
+              width={176}
+              height={60}
+              className="w-[125px] sm:w-[150px] md:w-[176px]"
+            />
+          </Link>
+
+          <ul className="text-orange flex items-center gap-2 xl:gap-3">
+            {menuItems.map((item) => (
+              <li key={item.text} className="hidden lg:block">
+                <Link
+                  className="p-2 text-sm leading-7 tracking-[0.05em] transition-all hover:text-[#fe6802]"
+                  href={item.link}
+                >
+                  {item.text}
+                </Link>
+              </li>
+            ))}
+
+            <li className="hidden md:block lg:ml-3">
+              <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7">
+                BOOK NOW
+              </button>
             </li>
-          ))}
-        </ul>
 
-        <ul className="flex items-center gap-1">
-          {socialMedias.map((socialMedia) => (
-            <li key={socialMedia.link}>
-              <Link href={socialMedia.link} target="_blank">
-                {socialMedia.icon}
-              </Link>
+            <li className="ml-5 grid place-items-center lg:hidden">
+              <button
+                onClick={() =>
+                  setIsMobileMenuOpen((currentValue) => !currentValue)
+                }
+                className="flex flex-col justify-center"
+              >
+                <span
+                  className={cn(
+                    "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
+                    {
+                      "translate-y-1 rotate-45": isMobileMenuOpen,
+                      "-translate-y-1": !isMobileMenuOpen,
+                    },
+                  )}
+                ></span>
+                <span
+                  className={cn(
+                    "my-1 block h-0.5 w-4 rounded-full bg-white transition-all duration-300 ease-out",
+                    {
+                      "opacity-0": isMobileMenuOpen,
+                      "opacity-100": !isMobileMenuOpen,
+                    },
+                  )}
+                ></span>
+                <span
+                  className={cn(
+                    "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
+                    {
+                      "-translate-y-2 -rotate-45": isMobileMenuOpen,
+                      "translate-y-1": !isMobileMenuOpen,
+                    },
+                  )}
+                ></span>
+              </button>
+
+              {/* <button
+                onClick={() =>
+                  setIsMobileMenuOpen((currentValue) => !currentValue)
+                }
+              >
+                {isMobileMenuOpen ? (
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 18L18 6M6 6L18 18"
+                      stroke="#FFF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.75 6.75H20.25M3.75 12H12M3.75 17.25H20.25"
+                      stroke="#FFF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                )}
+              </button> */}
             </li>
-          ))}
-        </ul>
+          </ul>
+        </div>
+      </nav>
 
-        <ul className="flex items-center gap-2">
-          {languages.map((language) => (
-            <li className="flex gap-2" key={language.text}>
-              <Image
-                className="shrink-0"
-                src={language.imgSrc}
-                alt={language.imgAlt}
-                width={16}
-                height={11}
-              />
-              <span className="text-xs">{language.text}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
-
-    <nav className="bg-app-gray p-6 text-white">
-      <div className="mx-auto flex max-w-section items-center justify-between gap-6">
-        <Link href="/">
-          <Image
-            src="/images/site-logo.png"
-            alt="site logo"
-            width={176}
-            height={60}
-          />
-        </Link>
-
-        <ul className="text-orange flex items-center gap-3">
+      <div
+        className={cn(
+          "fixed top-0 z-40 h-full max-h-screen w-full bg-app-gray p-8 pt-28 transition-all duration-300 ease-out",
+          {
+            "translate-x-full": !isMobileMenuOpen,
+            "translate-x-0": isMobileMenuOpen,
+          },
+        )}
+      >
+        <ul className="text-orange flex flex-col items-center gap-6">
           {menuItems.map((item) => (
             <li key={item.text}>
               <Link
-                className="p-2 text-sm leading-7 tracking-[0.05em] transition-all hover:text-[#fe6802]"
+                className="p-2 text-lg leading-7 tracking-[0.05em] text-white transition-all hover:text-[#fe6802]"
                 href={item.link}
               >
                 {item.text}
@@ -190,13 +313,32 @@ export const Header = () => (
             </li>
           ))}
 
-          <li className="ml-3">
-            <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-7 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150">
+          <li>
+            <button className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7">
               BOOK NOW
             </button>
           </li>
+
+          <ul className="mt-4 flex gap-8 text-white">
+            {languages.map((language) => (
+              <li key={language.text}>
+                <button className="group flex items-center gap-2">
+                  <Image
+                    className="shrink-0"
+                    src={language.imgSrc}
+                    alt={language.imgAlt}
+                    width={16}
+                    height={11}
+                  />
+                  <span className="leading-none transition-all group-hover:text-[#fe6802]">
+                    {language.text}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
         </ul>
       </div>
-    </nav>
-  </header>
-);
+    </>
+  );
+};
