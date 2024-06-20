@@ -3,8 +3,8 @@ import React from "react";
 import imgHero from "/public/images/mercedes-cars.png";
 
 export const HeroSection = () => (
-  <section className="relative overflow-hidden pb-0 pt-16 md:py-24 bg-[#A3A7AD]">
-    <div className="px-default relative z-[1] mx-auto flex max-w-section min-h-[40dvh]">
+  <section className="relative overflow-hidden bg-[#A3A7AD] pb-0 pt-16 md:py-24">
+    <div className="px-default relative z-[1] mx-auto flex min-h-[40dvh] max-w-section">
       <div className="flex flex-col items-center gap-20 md:flex-row md:gap-12">
         <div className="flex shrink-0 flex-col items-center md:items-start">
           <h1
@@ -27,13 +27,19 @@ export const HeroSection = () => (
       </div>
     </div>
 
-    <div className="absolute left-0 top-0 w-full h-full overflow-hidden hidden md:block">
-      <div
-        className="absolute left-0 top-0 h-full w-full opacity-50 bg-gradient-to-bl from-zinc-500 to-zinc-800" 
-      ></div>
-      
-      <video className="w-auto min-w-full min-h-full max-w-none" loop autoPlay muted playsInline preload="none">
+    <div className="absolute left-0 top-0 hidden h-full w-full overflow-hidden md:block">
+      <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-bl from-zinc-500 to-zinc-800 opacity-50"></div>
+
+      <video
+        className="min-h-full w-auto min-w-full max-w-none"
+        loop
+        autoPlay
+        muted
+        playsInline
+        preload="none"
+      >
         <source src="videos/hero-background.mp4" type="video/mp4" />
+        <source src="videos/hero-background.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
