@@ -22,7 +22,7 @@ export const HeroSection = () => (
       <div className="flex flex-col items-center md:items-start">
         <h1
           className="flex flex-col gap-1 text-center text-2xl md:text-3xl font-normal text-white md:gap-4 md:text-left"
-          style={{ textShadow: "3px -1px 5px rgba(0, 0, 0, 0.5);" }}
+          style={{ textShadow: "3px -1px 5px rgba(0, 0, 0, 0.5)" }}
         >
           Velkommen til Nordic
           <span className="text-4xl md:text-6xl text-app-orange">Xpress</span>
