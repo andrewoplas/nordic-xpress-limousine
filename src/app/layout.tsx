@@ -1,8 +1,8 @@
-import type { Metadata, Viewport } from "next";
-import { Inter, Source_Sans_3 } from "next/font/google";
-import "./globals.css";
-import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import type { Metadata, Viewport } from "next";
+import { Source_Sans_3 } from "next/font/google";
+import "./globals.css";
 
 const inter = Source_Sans_3({ subsets: ["latin"] });
 
