@@ -3,8 +3,6 @@ import { Pathnames } from "next-intl/routing";
 export const locales = ["en", "da"];
 
 export const pathnames = {
-  // If locales use different paths, you can
-  // specify each external path per locale
   "/": "/",
   "/about-us": {
     en: "/about-us",
@@ -13,5 +11,13 @@ export const pathnames = {
   "/car-fleet": {
     en: "/car-fleet",
     da: "/bilflaade",
+  },
+  "/chauffeurs": {
+    en: "/chauffeurs",
+    da: "/chauffoerer",
+  },
+  "/faq": {
+    en: "/faq",
+    da: "/spoergsmaal-svar",
   },
 } satisfies Pathnames<typeof locales>;
