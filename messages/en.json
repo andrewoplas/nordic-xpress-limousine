@@ -1,0 +1,90 @@
+{
+  "general": {
+    "book_now": "Book Now"
+  },
+  "header": {
+    "home": "HOME",
+    "about_us": "ABOUT US",
+    "services": "SERVICES",
+    "car_fleet": "CAR FLEET",
+    "chauffeurs": "CHAUFFEURS",
+    "faq": "FAQ",
+    "contact": "CONTACT"
+  },
+  "footer": {
+    "contact": "Contact",
+    "company": "Company",
+    "about_us": "About us",
+    "services": "Services",
+    "car_fleet": "Car Fleet",
+    "chauffeurs": "Chauffeurs",
+    "careers": "Careers",
+    "information": "Information",
+    "faq": "FAQ",
+    "booking": "Booking",
+    "terms_and_conditions": "Terms and Conditions",
+    "privacy_policy": "Privacy Policy",
+    "accepted_payment": "Accepted Payment",
+    "subscribe": "Subscribe",
+    "your_email": "Your email"
+  },
+
+  "homepage": {
+    "hero_section": {
+      "welcome": "Welcome to Nordic",
+      "xpress": "Xpress",
+      "service_name": "Limousine Service"
+    },
+    "services_section": {
+      "heading": "Efficient and Reliable Transportation Solutions for Your Valuable Time",
+      "airport_transfers": {
+        "heading": "Airport Transfers",
+        "description": "Arrive at the airport on time and stress-free with our reliable airport transfer service."
+      },
+      "cruise_port_transfers": {
+        "heading": "Cruise Port Transfers",
+        "description": "Start your cruise vacation off on the right foot with our hassle-free cruise port transfer services."
+      },
+      "business_travel": {
+        "heading": "Business Travel",
+        "description": "Make a great first impression with our professional and reliable business travel services."
+      },
+      "leisure_travel": {
+        "heading": "Leisure Travel",
+        "description": "Enjoy a stress-free and memorable leisure travel experience with our comfortable transportation services."
+      },
+      "cta": {
+        "heading": "Find out more about our other available services",
+        "button_text": "LEARN MORE"
+      }
+    },
+    "features_section": {
+      "zero_emission": {
+        "heading": "Zero-Emission Luxury Vehicles",
+        "description": "Our commitment to sustainable luxury extends to our extensive fleet of Mercedes-Benz electric vehicles. We offer a variety of options to accommodate your group's needs, ensuring a comfortable and stylish journey for every occasion. Whether it's an airport transfer, a corporate event, or a special celebration, our emission-free fleet is ready to exceed your expectations."
+      },
+      "wide_coverage": {
+        "heading": "Wide Coverage",
+        "description": "Based in Denmark, we provide luxurious, zero-emission transportation services throughout the Nordic countries (Sweden, Finland, Norway) and to/from major European hubs like Germany and England, as well as Dubai. Whether you need airport transfers, business travel, or a special event chauffeur, our fleet is ready to take you to your destination in comfort and style."
+      },
+      "affordable_luxury": {
+        "heading": "Affordable Luxury",
+        "description": "Don't settle for less when it comes to your transportation needs. Our affordable luxury service guarantees a reliable, comfortable, and stylish ride every time. We pride ourselves on delivering exceptional value, ensuring you reach your destination in style without compromising on your budget."
+      },
+      "private_tours": {
+        "heading": "Private Tours with Qualified Guides",
+        "description": "Our commitment to sustainable luxury extends to our extensive fleet of Mercedes-Benz electric vehicles. We offer a variety of options to accommodate your group's needs, ensuring a comfortable and stylish journey for every occasion. Whether it's an airport transfer, a corporate event, or a special celebration, our emission-free fleet is ready to exceed your expectations."
+      }
+    },
+    "quality_section": {
+      "heading": "Affordable transportation that doesn't compromise on quality",
+      "description": "Enjoy reliable and cost-effective services today",
+      "stats_section": {
+        "heading": "Your Reliable Transportation Provider",
+        "transfers": "Transfers",
+        "city_covered": "City Covered",
+        "premium_vehicles": "Premium Vehicles"
+      }
+    }
+  }
+}

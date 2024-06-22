@@ -1,8 +1,10 @@
+import { NextPageProps } from "@/lib/types";
+import { unstable_setRequestLocale } from "next-intl/server";
 import Head from "next/head";
-import { CtaSection } from "./components/cta-section";
-import { FeaturesSection } from "./components/features-section";
-import { HeroSection } from "./components/hero-section";
-import { TransportationSection } from "./components/transportation-section";
+import { CtaSection } from "../../components/homepage/cta-section";
+import { FeaturesSection } from "../../components/homepage/features-section";
+import { HeroSection } from "../../components/homepage/hero-section";
+import { ServicesSection } from "../../components/homepage/services-section";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -98,7 +100,9 @@ const jsonLd = {
   ],
 };
 
-export default function Home() {
+export default function Home({ params: { locale } }: NextPageProps) {
+  unstable_setRequestLocale(locale);
+
   return (
     <>
       <Head>
@@ -109,7 +113,7 @@ export default function Home() {
       </Head>
       <main className="min-h-screen overflow-x-hidden bg-[#1E1E1E]">
         <HeroSection />
-        <TransportationSection />
+        <ServicesSection />
         <FeaturesSection />
         <CtaSection />
       </main>

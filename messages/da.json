@@ -1,0 +1,89 @@
+{
+  "general": {
+    "book_now": "Book Nu"
+  },
+  "header": {
+    "home": "FORSIDE",
+    "about_us": "OM OS",
+    "services": "SERVICES",
+    "car_fleet": "BILFLÅDE",
+    "chauffeurs": "CHAUFFØRER",
+    "faq": "SPØRGSMÅL & SVAR",
+    "contact": "KONTAKT"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "company": "Virksomhed",
+    "about_us": "Om os",
+    "services": "Services",
+    "car_fleet": "Bilflåde",
+    "chauffeurs": "Chauffører",
+    "careers": "Karriere",
+    "information": "Information",
+    "faq": "Spørgsmål og Svar",
+    "booking": "Booking",
+    "terms_and_conditions": "Vilkår og Betingelser",
+    "privacy_policy": "Privatlivspolitik",
+    "accepted_payment": "Betalingsformer",
+    "subscribe": "Abonner",
+    "your_email": "Din email"
+  },
+  "homepage": {
+    "hero_section": {
+      "welcome": "Velkommen til Nordic",
+      "xpress": "Xpress",
+      "service_name": "Limousine Service"
+    },
+    "services_section": {
+      "heading": "Effektive og pålidelige transportløsninger til din værdifulde tid",
+      "airport_transfers": {
+        "heading": "Lufthavnstransfer",
+        "description": "Ankom til lufthavnen til tiden og uden stress med vores pålidelige lufthavnstransportservice."
+      },
+      "cruise_port_transfers": {
+        "heading": "Krydstogt",
+        "description": "Start din krydstogtferie på den rigtige fod med vores problemfri krydstogtshavns-transportservice."
+      },
+      "business_travel": {
+        "heading": "Forretningsrejser",
+        "description": "Gør et godt første indtryk med vores professionelle og pålidelige transporttjenester."
+      },
+      "leisure_travel": {
+        "heading": "Fritidsrejser",
+        "description": "Nyd en stressfri og mindeværdig fritidsrejseoplevelse med vores komfortable og stilfulde transporttjenester."
+      },
+      "cta": {
+        "heading": "Få mere information om vores øvrige tilgængelige services",
+        "button_text": "LÆS MERE"
+      }
+    },
+    "features_section": {
+      "zero_emission": {
+        "heading": "Emissionsfri luksusbiler",
+        "description": "Vores forpligtelse til bæredygtig luksus strækker sig til vores omfattende flåde af Mercedes-Benz elbiler. Vi tilbyder en række muligheder for at imødekomme din gruppes behov, hvilket sikrer en komfortabel og stilfuld rejse til enhver lejlighed. Uanset om det er en lufthavnstransport, et firmaarrangement eller en særlig fest, er vores emissionsfrie flåde klar til at overgå dine forventninger."
+      },
+      "wide_coverage": {
+        "heading": "Bred dækning",
+        "description": "Baseret i Danmark leverer vi luksuriøse, nul-emissionstransporttjenester i hele de nordiske lande (Sverige, Finland, Norge) og til/fra store europæiske knudepunkter som Tyskland og England samt Dubai. Uanset om du har brug for lufthavnstransport, forretningsrejser eller en chauffør til en speciel begivenhed, er vores flåde klar til at tage dig til din destination i komfort og stil."
+      },
+      "affordable_luxury": {
+        "heading": "Overkommelig luksus",
+        "description": "Lad dig ikke nøjes med mindre, når det kommer til dine transportbehov. Vores prisvenlige luksusservice garanterer en pålidelig, komfortabel og stilfuld tur hver gang. Vi er stolte af at levere enestående værdi og sikre, at du når din destination med stil uden at gå på kompromis med dit budget."
+      },
+      "private_tours": {
+        "heading": "Private ture med kvalificerede guider",
+        "description": "Vores forpligtelse til bæredygtig luksus strækker sig til vores omfattende flåde af Mercedes-Benz elbiler. Vi tilbyder en række muligheder for at imødekomme din gruppes behov, hvilket sikrer en komfortabel og stilfuld rejse til enhver lejlighed. Uanset om det er en lufthavnstransport, et firmaarrangement eller en særlig fest, er vores emissionsfrie flåde klar til at overgå dine forventninger."
+      }
+    },
+    "quality_section": {
+      "heading": "Prisvenlig transport med høj kvalitet",
+      "description": "Nyd pålidelig og omkostningseffektiv service uden komprimis i dag",
+      "stats_section": {
+        "heading": "Din pålidelige transportudbyder",
+        "transfers": "Overførsler",
+        "city_covered": "By dækket",
+        "premium_vehicles": "Premium køretøjer"
+      }
+    }
+  }
+}
