@@ -35,8 +35,8 @@ const CarFleet = ({ params: { locale } }: NextPageProps) => {
         })}
       </section>
 
-      <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 py-16 lg:py-20">
-        <h2 className="text-h3 text-center">{t("cta_heading")}</h2>
+      <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
+        <h2 className="text-center text-xl">{t("cta_heading")}</h2>
         <Button>{tGeneral("book_now")}</Button>
       </section>
     </main>
