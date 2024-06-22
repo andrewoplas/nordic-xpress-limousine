@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import imgPaymentApplePay from "/public/images/payment-apple-pay.svg";
@@ -5,8 +7,6 @@ import imgPaymentGooglePay from "/public/images/payment-google-pay.svg";
 import imgPaymentMastercard from "/public/images/payment-mastercard.svg";
 import imgPaymentMobilePay from "/public/images/payment-mobile-pay.svg";
 import imgPaymentVisa from "/public/images/payment-visa.svg";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
 
 export const Footer = ({ locale }: { locale: string }) => {
   const t = useTranslations("footer");

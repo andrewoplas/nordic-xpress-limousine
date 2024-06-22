@@ -1,9 +1,11 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { Link as NavigationLink } from "../navigation";
-
-import { HeaderMobile } from "./header-mobile";
+import { Link as NavigationLink, usePathname } from "../lib/i18n/navigation";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 const languages = [
   {
@@ -104,6 +106,7 @@ const socialMedias = [
 
 export const Header = ({ locale }: { locale: string }) => {
   const t = useTranslations("header");
+  const pathname = usePathname();
 
   const menuItems = [
     {
@@ -116,23 +119,23 @@ export const Header = ({ locale }: { locale: string }) => {
     },
     {
       text: t("services"),
-      link: "",
+      link: "/",
     },
     {
       text: t("car_fleet"),
-      link: "",
+      link: "/",
     },
     {
       text: t("chauffeurs"),
-      link: "",
+      link: "/",
     },
     {
       text: t("faq"),
-      link: "",
+      link: "/",
     },
     {
       text: t("contact"),
-      link: "",
+      link: "/",
     },
   ];
 
@@ -170,7 +173,7 @@ export const Header = ({ locale }: { locale: string }) => {
             {languages.map((language) => (
               <li key={language.text}>
                 <NavigationLink
-                  href="/"
+                  href={pathname}
                   locale={language.locale}
                   aria-label={`translate into ${language.text}`}
                   className="group flex items-center gap-2"
@@ -210,17 +213,134 @@ export const Header = ({ locale }: { locale: string }) => {
                 <NavigationLink
                   className="p-2 text-sm leading-7 tracking-[0.05em] transition-all hover:text-[#fe6802]"
                   href={item.link}
-                  locale={locale}
                 >
                   {item.text}
                 </NavigationLink>
               </li>
             ))}
 
-            <HeaderMobile menuItems={menuItems} languages={languages} />
+            <HeaderMobile menuItems={menuItems} />
           </ul>
         </div>
       </nav>
+    </>
+  );
+};
+
+type Props = {
+  menuItems: {
+    text: string;
+    link: string;
+  }[];
+};
+
+export const HeaderMobile = ({ menuItems }: Props) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  return (
+    <>
+      <li className="hidden md:block xl:ml-3">
+        <button
+          aria-label="book now"
+          className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
+        >
+          BOOK NOW
+        </button>
+      </li>
+
+      <li className="ml-5 grid place-items-center lg:hidden">
+        <button
+          onClick={() => setIsMobileMenuOpen((currentValue) => !currentValue)}
+          className="flex flex-col justify-center"
+          aria-label="mobile menu icon"
+        >
+          <span
+            className={cn(
+              "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
+              {
+                "translate-y-1 rotate-45": isMobileMenuOpen,
+                "-translate-y-1": !isMobileMenuOpen,
+              },
+            )}
+          ></span>
+          <span
+            className={cn(
+              "my-1 block h-0.5 w-4 rounded-full bg-white transition-all duration-300 ease-out",
+              {
+                "opacity-0": isMobileMenuOpen,
+                "opacity-100": !isMobileMenuOpen,
+              },
+            )}
+          ></span>
+          <span
+            className={cn(
+              "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
+              {
+                "-translate-y-2 -rotate-45": isMobileMenuOpen,
+                "translate-y-1": !isMobileMenuOpen,
+              },
+            )}
+          ></span>
+        </button>
+      </li>
+
+      <div
+        className={cn(
+          "fixed top-0 z-40 h-full max-h-screen w-full bg-app-gray p-8 pt-28 transition-all duration-300 ease-out",
+          {
+            "translate-x-full": !isMobileMenuOpen,
+            "translate-x-0": isMobileMenuOpen,
+          },
+        )}
+      >
+        <ul className="text-orange flex flex-col items-center gap-6">
+          {menuItems.map((item) => (
+            <li key={item.text}>
+              <Link
+                className="p-2 text-lg leading-7 tracking-[0.05em] text-white transition-all hover:text-[#fe6802]"
+                href={item.link}
+              >
+                {item.text}
+              </Link>
+            </li>
+          ))}
+
+          <li>
+            <button
+              aria-label="book now"
+              className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
+            >
+              BOOK NOW
+            </button>
+          </li>
+
+          <li>
+            <ul className="mt-4 flex gap-8 text-white">
+              {languages.map((language) => (
+                <li key={language.text}>
+                  <NavigationLink
+                    href="/"
+                    locale={language.locale}
+                    aria-label={`translate into ${language.text}`}
+                    className="group flex items-center gap-2"
+                  >
+                    <Image
+                      className="shrink-0"
+                      src={language.imgSrc}
+                      alt={language.imgAlt}
+                      width={16}
+                      height={11}
+                    />
+                    <span className="leading-none transition-all group-hover:text-[#fe6802]">
+                      {language.text}
+                    </span>
+                  </NavigationLink>
+                </li>
+              ))}
+            </ul>
+          </li>
+        </ul>
+      </div>
     </>
   );
 };
