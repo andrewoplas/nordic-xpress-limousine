@@ -3,10 +3,12 @@ import aboutUsBackgroundImg from "/public/images/about-us-bg.webp";
 import { useTranslations } from "next-intl";
 import { NextPageProps } from "@/lib/types";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { Button } from "@/components/ui/button";
 
 const AboutUs = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);
   const t = useTranslations("about");
+  const tGeneral = useTranslations("general");
 
   return (
     <main>
@@ -32,6 +34,11 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
           ),
           p: (chunks) => <p className="mb-4 leading-relaxed">{chunks}</p>,
         })}
+      </section>
+
+      <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
+        <h2 className="text-center text-xl">{t("cta_heading")}</h2>
+        <Button>{tGeneral("contact_us")}</Button>
       </section>
     </main>
   );
