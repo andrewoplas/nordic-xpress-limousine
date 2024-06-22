@@ -33,7 +33,7 @@ const Services = ({ params: { locale } }: NextPageProps) => {
           p: (chunks) => <p className="mb-4 leading-relaxed">{chunks}</p>,
         })}
 
-        {[
+        {/* {[
           "airport_transfers",
           "cruise_port_transfers",
           "business_travel",
@@ -43,7 +43,7 @@ const Services = ({ params: { locale } }: NextPageProps) => {
           "fairs_and_events",
         ].map((key) => {
           return <div>{t(`${key}.heading`)}</div>;
-        })}
+        })} */}
       </section>
     </main>
   );

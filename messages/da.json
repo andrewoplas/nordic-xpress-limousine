@@ -1,6 +1,7 @@
 {
   "general": {
-    "book_now": "Book Nu"
+    "book_now": "Book Nu",
+    "contact_us": "Kontakt Os"
   },
   "header": {
     "home": "FORSIDE",
@@ -88,11 +89,115 @@
   },
   "about": {
     "heading": "Om os",
-    "content": "<h2>Nordic Xpress Limousine Service - Din pålidelige transportløsning i Danmark.</h2><p>Velkommen til Nordic Xpress Limousine Service, et dansk-baseret firma etableret i 2023 for at tilbyde transporttjenester til både lokale indbyggere og internationale besøgende. Vores udvalg af tjenester omfatter lufthavnstransport til og fra større lufthavne i Danmark samt transport til forretnings- og fritidsrejser i hele landet. Vi er forpligtet til at levere en pålidelig og effektiv Xpress transporttjeneste, der er tilgængelig døgnet rundt hele året for at imødekomme vores kunders transportbehov.</p><p>Mens lufthavnstransport er vores primære fokus, tilbyder vi også transporttjenester til andre typer rejser i hele Danmark. Vores virksomhed opererer primært på Sjælland, men vi kan også tilbyde transport til andre regioner i Danmark. Derudover udvider vi vores tjenester ud over de danske grænser til Tyskland og Sverige og tilbyder transport til og fra disse nabolande.</p><p>For mere information om vores tjenester og for at udforske vores tilbud detaljeret, besøg venligst vores websides servicemenu.</p><h2>Konkurrencedygtige priser</h2><p>Vi er dedikeret til at tilbyde omkostningseffektive passagertransport services til vores værdsatte kunder. Vi stræber konstant efter at minimere vores udgifter, samtidig med at vi opretholder det høje kvalitetsniveau i vores tjenester. Ved at styre vores omkostninger effektivt er vi i stand til at tilbyde vores tjenester til lavere priser end mange af vores konkurrenter og give vores kunder mere overkommelige muligheder uden at gå på kompromis med kvaliteten.</p><h2>Grøn omstilling</h2><p>I Nordisk Xpress Limousine Service prioriterer vi bæredygtige praksisser og reducering af vores miljøpåvirkning. For at følge vores grønne tankegang har vi foretaget betydelige investeringer i miljøvenlige køretøjer, specifikt ved at skifte til elektrisk drevne muligheder.</p><h2>Hos os kommer kunderne altid først</h2><p>I Nordic Xpress Limousine Service prioriterer vi kundetilfredshed over alt andet, og vores kunder kommer altid i første række. Vi går langt for at sikre, at vores service er skræddersyet til at imødekomme deres behov. Som en del af vores kundeorienterede tilgang udvikler og implementerer vi kontinuerligt moderne passagertransport services.</p><h2>Luksuriøse og komfortable køretøjer</h2><p>Vores luksuriøse og komfortable køretøjer er designet med omhyggeligt udvalgte funktioner i branchen, der sikrer, at vores passagerer får en ekstraordinær rejseoplevelse. Vi går ikke på kompromis med sikkerheden, og derfor har vi implementeret de seneste teknologier og sikkerhedsforanstaltninger for at sikre en tryg rejse. Vores komfortable køretøjer er også udstyret med state-of-the-art bekvemmeligheder, som sikrer en behagelig rejseoplevelse for vores passagerer. Vi er stolte af at kunne tilbyde en førsteklasses service til vores kunder og sørger altid for at opretholde de højeste standarder for kvalitet og komfort i vores køretøjer.</p>"
+    "content": "<h2>Nordic Xpress Limousine Service - Din pålidelige transportløsning i Danmark.</h2><p>Velkommen til Nordic Xpress Limousine Service, et dansk-baseret firma etableret i 2023 for at tilbyde transporttjenester til både lokale indbyggere og internationale besøgende. Vores udvalg af tjenester omfatter lufthavnstransport til og fra større lufthavne i Danmark samt transport til forretnings- og fritidsrejser i hele landet. Vi er forpligtet til at levere en pålidelig og effektiv Xpress transporttjeneste, der er tilgængelig døgnet rundt hele året for at imødekomme vores kunders transportbehov.</p><p>Mens lufthavnstransport er vores primære fokus, tilbyder vi også transporttjenester til andre typer rejser i hele Danmark. Vores virksomhed opererer primært på Sjælland, men vi kan også tilbyde transport til andre regioner i Danmark. Derudover udvider vi vores tjenester ud over de danske grænser til Tyskland og Sverige og tilbyder transport til og fra disse nabolande.</p><p>For mere information om vores tjenester og for at udforske vores tilbud detaljeret, besøg venligst vores websides servicemenu.</p><h2>Konkurrencedygtige priser</h2><p>Vi er dedikeret til at tilbyde omkostningseffektive passagertransport services til vores værdsatte kunder. Vi stræber konstant efter at minimere vores udgifter, samtidig med at vi opretholder det høje kvalitetsniveau i vores tjenester. Ved at styre vores omkostninger effektivt er vi i stand til at tilbyde vores tjenester til lavere priser end mange af vores konkurrenter og give vores kunder mere overkommelige muligheder uden at gå på kompromis med kvaliteten.</p><h2>Grøn omstilling</h2><p>I Nordisk Xpress Limousine Service prioriterer vi bæredygtige praksisser og reducering af vores miljøpåvirkning. For at følge vores grønne tankegang har vi foretaget betydelige investeringer i miljøvenlige køretøjer, specifikt ved at skifte til elektrisk drevne muligheder.</p><h2>Hos os kommer kunderne altid først</h2><p>I Nordic Xpress Limousine Service prioriterer vi kundetilfredshed over alt andet, og vores kunder kommer altid i første række. Vi går langt for at sikre, at vores service er skræddersyet til at imødekomme deres behov. Som en del af vores kundeorienterede tilgang udvikler og implementerer vi kontinuerligt moderne passagertransport services.</p><h2>Luksuriøse og komfortable køretøjer</h2><p>Vores luksuriøse og komfortable køretøjer er designet med omhyggeligt udvalgte funktioner i branchen, der sikrer, at vores passagerer får en ekstraordinær rejseoplevelse. Vi går ikke på kompromis med sikkerheden, og derfor har vi implementeret de seneste teknologier og sikkerhedsforanstaltninger for at sikre en tryg rejse. Vores komfortable køretøjer er også udstyret med state-of-the-art bekvemmeligheder, som sikrer en behagelig rejseoplevelse for vores passagerer. Vi er stolte af at kunne tilbyde en førsteklasses service til vores kunder og sørger altid for at opretholde de højeste standarder for kvalitet og komfort i vores køretøjer.</p>",
+    "cta_heading": "Oplev luksuriøs transportservice med Nordic Xpress Limousine Service. Book nu eller ring til os for at høre mere om vores Services"
   },
   "car_fleet": {
     "heading": "Bilflåde",
     "content": "<h2>Bredt udvalg af køretøjer</h2><p>Nordic Xpress Limousine Service besidder et bredt udvalg af kvalitetskøretøjer. Vores Mercedes-Benz business vans er fremragende valg, med rigelig plads til op til 7 passagerer og en luksuriøs kabine, der sikrer en behagelig tur. Udstyret med den nyeste teknologi og bekvemmeligheder er dette køretøj perfekt til grupper eller familier, der ønsker at rejse med stil. V-Class er også det perfekte køretøj til executive og VIP-transport, lufthavnstransfer eller grupperejser, hvor der ønskes en høj grad af komfort og luksus.</p><p>Vi bestræber os på at imødekomme vores kunders forskellige transportbehov og præferencer, derfor tilbyder vi en bred vifte af køretøjer til vores kunder, herunder vores elegante og klassiske sedan og vores rummelige MVP til forretningsmøder og vores bus til større grupper.</p><p>Alle vores køretøjer er nøje vedligeholdt og regelmæssigt serviceret for at sikre, at de er i top stand. Vi investerer i den nyeste teknologi og bekvemmeligheder for at sikre, at vores kunder nyder en sikker, behagelig og luksuriøs tur hver gang de rejser med os.</p><p>Uanset hvad dine transportbehov er, har vi det perfekte køretøj til at imødekomme dine behov.</p>",
     "cta_heading": "Kontakt os i dag og oplev en luksuriøs køreoplevelse"
+  },
+  "chauffeurs": {
+    "heading": "Chauffører",
+    "content": "<h2>Pålidelige og professionelle chauffører</h2><p>Nordic Xpress Limousine Service besidder et team af erfarne, pålidelige og professionelle chauffører, der er dedikerede til at sikre, at vores kunder modtager en høj grad af service og ekspertise på hver tur.</p><h2>Kurser og uddannelse</h2><p>Vi er glade for at kunne tilbyde vores kunder kvalificerede og erfarne chauffører, der har gennemført alle relevante kurser for at kunne arbejde i branchen. Vores primære målsætning er at levere professionelle chauffører, der er veluddannede og opdaterede med de seneste standarder og bestemmelser.</p><p>Du kan stole på os til at levere en sikker, pålidelig og behagelig oplevelse hver gang du kører med os.</p><h2>Geografisk kendskab</h2><p>Vores erfarne og dygtige chauffører har en omfattende viden om geografien i de områder, hvor vi tilbyder vores tjenester. Dette giver dem evnen til at navigere med lethed og sikre, at vores kunder ankommer til deres destinationer til tiden og uden problemer.</p><p>Vores chauffører er også yderst bekendte med de lokale turiststeder og attraktioner, hvilket giver dem mulighed for at give værdifulde vejledninger og rådgivning til vores kunder. Med vores chaufførers ekspertise og geografiske kendskab kan vores kunder være sikre på, at de får en behagelig og problemfri transportoplevelse.</p><h2>Uniform</h2><p>Hos Nordic Xpress Limousine Service forstår vi vigtigheden af at fremstå professionelle og stræber efter at opretholde en høj standard for vores udseende til enhver tid. Vores største prioritet er at sikre, at vores kunder føler sig komfortable og trygge, når de rejser med os, hvilket inkluderer at sikre, at vores chauffører er passende klædt på til lejligheden. Vi er stolte af at tilbyde en service, der ikke kun er funktionel, men også stilfuld og visuelt appellerende, hvilket afspejler vores engagement i at levere en topklasses oplevelse til vores kunder.</p>",
+    "cta_heading": "Så hvorfor vente? Kontakt os i dag for at bestille en professionel chauffør og oplev komforten og bekvemmeligheden af vores service på første hånd"
+  },
+  "faq": {
+    "heading": "Spørgsmål & Svar",
+    "description": "Bemærk, at de oplysninger, der gives i dette spørgsmål & svar afsnit, er ment som en generel guide til vores tjenester og politikker. For mere detaljeret information opfordrer vi kunderne til at gennemgå vores vilkår og betingelser. Vores vilkår og betingelser dækker en række emner, herunder vores afbestillingspolitik og tilbagebetalinger. Du kan få adgang til vores vilkår og betingelser på vores hjemmeside eller ved at kontakte vores kundeserviceteam.",
+    "items": [
+      {
+        "heading": "Hvilke typer køretøjer tilbyder jeres virksomhed til transport?",
+        "description": "Nordic Xpress Limousine Service tilbyder en alsidig flåde af højkvalitets køretøjer, herunder den luksuriøse Mercedes Benz V-Class van, der er perfekt til executive og VIP-transport, lufthavnstransport og gruppeudflugter. Vi tilbyder også en række andre køretøjer, såsom vores elegante sedan og rummelige MVP, for at imødekomme vores kunders varierede behov og præferencer."
+      },
+      {
+        "heading": "Hvordan foretager jeg en reservation til transport med jeres virksomhed?",
+        "description": "At booke transport med Nordic Xpress Limousine Service er nemt og bekvemt takket være vores flere bookingmuligheder. Du kan foretage din reservation ved hjælp af vores brugervenlige online platform eller via telefon og e-mail. Vores venlige personale er altid tilgængelige for at hjælpe dig med at vælge det rigtige køretøj og give dig al den nødvendige information til dine transportbehov. Uanset om det er til forretning eller fritid, så har Nordic Xpress Limousine Service dig dækket."
+      },
+      {
+        "heading": "Hvad er omkostningerne ved transport med jeres virksomhed?",
+        "description": "På Nordic Xpress Limousine Service stræber vi efter at give vores kunder konkurrencedygtige og gennemsigtige priser for deres transportbehov. Du kan nemt se priserne for hver tur, når du booker gennem vores online platform, hvor du kan indtaste dine rejseoplysninger, destination og ankomstoplysninger og modtage et øjeblikkeligt tilbud. Vores priser er baseret på flere faktorer, såsom afstand, køretøjstype og eventuelle yderligere anmodninger, du måtte have. Vi er stolte af vores fair priser og højkvalitetsservice, og sikrer, at du får den bedste værdi for dine transportbehov."
+      },
+      {
+        "heading": "Er der rabatter tilgængelige for hyppige passagerer eller bulk transportbestillinger?",
+        "description": "Nordic Express Limousine Service er glad for at tilbyde særlige prismæssige aftaler for hyppige passagerer og bulktransportbestillinger. Vi værdsætter vores faste kunder og forstår vigtigheden af at imødekomme deres besparelsesbehov. Derfor bestræber vi på at forhandle individuelle aftaler, der giver den bedst mulige pris. Uanset om du er en hyppig passager eller har brug for bulktransporttjenester, kan vi hjælpe dig med at spare penge på dine transportbehov."
+      },
+      {
+        "heading": "Er jeres transporttjeneste tilgængelig 24/7, eller er der bestemte driftstider?",
+        "description": "Nordic Express Limousine Service tilbyder transporttjenester 24/7, så du kan rejse med os på alle tidspunkter af dagen eller natten. Vores professionelle kundeserviceteam er tilgængeligt døgnet rundt for at besvare eventuelle spørgsmål eller bekymringer, du måtte have. Hvis du har brug for at foretage en reservation eller har yderligere spørgsmål, skal du ikke tøve med at kontakte os."
+      },
+      {
+        "heading": "Hvad sker der, hvis det reserverede køretøj ikke er tilgængeligt på grund af uforudsete omstændigheder?",
+        "description": "I sådanne tilfælde vil virksomheden gøre alt for at tilbyde kunden en alternativ transportløsning, såsom et erstatningskøretøj, taxa eller en anden transporttjeneste."
+      },
+      {
+        "heading": "Hvad er jeres virksomheds politik vedrørende aflysninger eller ombooking af transportreservationer?",
+        "description": "Aflysninger eller ombooking skal foretages mindst 24 timer før den oprindelige reservation. Anmodninger, der er lavet inden for denne tidsramme, er underlagt vores afbestillingspolitik, som er beskrevet i vores vilkår og betingelser. Se venligst vores vilkår og betingelser for mere detaljeret information om vores afbestillingspolitik og refusion. Der gives ingen refusion for aflysninger eller ombooking, der er foretaget inden for 24 timer før afhentningstidspunktet."
+      },
+      {
+        "heading": "Hvad hvis min tur mislykkes på grund af forkerte bookingsoplysninger?",
+        "description": "Vi er ikke ansvarlige for mislykkede ture, der skyldes forkerte oplysninger, der er angivet under booking. Sørg venligst for, at alle oplysninger, herunder afhentnings-/afleveringssteder, dato/tidspunkt og eventuelle særlige anmodninger, er korrekte, inden du indsender din reservation. Hvis du har brug for at ændre din reservation, bedes du informere os så hurtigt som muligt. For yderligere oplysninger om vores politikker, se venligst vores vilkår og betingelser på vores hjemmeside."
+      },
+      {
+        "heading": "Er jeres køretøjer udstyret med faciliteter såsom Wi-Fi, aircondition eller opladningsporte?",
+        "description": "Ja, vores køretøjer er udstyret med en række faciliteter for at sikre en behagelig og praktisk tur for vores kunder. Dette inkluderer faciliteter som Wi-Fi, aircondition og opladningsporte. Vi forstår vigtigheden af at være tilsluttet og opladet, mens man er på farten, hvilket er grunden til, at vi tilbyder disse faciliteter som standardfunktioner i vores køretøjer."
+      },
+      {
+        "heading": "Muligheder for særlige ønsker eller præferencer?",
+        "description": "Ja, vi gør vores bedste for at imødekomme alle særlige ønsker eller præferencer, vores kunder måtte have. Dette inkluderer ekstra siddepladser, en bestemt type køretøj eller andre nødvendige indkvarteringer. Bed venligst vores kundeserviceteam om hjælp, når du foretager din reservation, og vi vil gøre vores bedste for at imødekomme dine behov."
+      },
+      {
+        "heading": "Tilbyder I børnesæder eller booster-sæder til børn?",
+        "description": "Ja, vi tilbyder børnesæder og booster-sæder som en del af vores standard service for at sikre sikkerheden for unge passagerer under transport med os. Hvis du har brug for en børnesæde eller booster-sæde, bedes du give os besked ved booking, og vi vil være glade for at tilbyde en til din rejse. Vores chauffører har erfaring med korrekt installation og fastgørelse af sæderne, så du kan slappe af og vide, at dit barn vil være sikkert og trygt under rejsen."
+      },
+      {
+        "heading": "Hvilke sikkerhedsforanstaltninger tager jeres firma for at sikre passagersikkerheden under transport?",
+        "description": "Vi tager passagersikkerhed meget seriøst og har implementeret flere sikkerhedsforanstaltninger for at sikre, at vores passagerer har en sikker og behagelig rejse. Vores køretøjer serviceres og vedligeholdes regelmæssigt for at sikre, at de er i god stand, og vores chauffører er trænet til at køre sikkert og følge alle trafikregler. Vi har også en streng politik for anvendelse af sikkerhedssele, og alle passagerer skal bære sikkerhedssele under transport med os."
+      },
+      {
+        "heading": "Hvor lang tid i forvejen skal jeg booke transport med jeres firma?",
+        "description": "Vi anbefaler at booke transport så tidligt som muligt for at sikre tilgængelighed, især i højsæsonen. Dog kan vi ofte imødekomme sidste øjebliks anmodninger også. Det er altid bedst at kontakte vores kundeserviceteam for at få oplysninger om tilgængelighed og foretage en reservation."
+      },
+      {
+        "heading": "Hvordan kontakter jeg kundesupport, hvis jeg har spørgsmål eller problemer med min transportreservation?",
+        "description": "Hvis du har spørgsmål eller problemer med din transportreservation, bedes du kontakte vores kundesupportteam via telefon eller e-mail. Vores team er tilgængeligt 24/7 for at hjælpe dig og vil gøre deres bedste for at besvare eventuelle bekymringer, du måtte have, så hurtigt og effektivt som muligt."
+      },
+      {
+        "heading": "Tilbyder I transporttjenester til steder uden for jeres normale serviceområde?",
+        "description": "Ja, vi tilbyder transporttjenester til steder uden for vores normale serviceområde. Der kan dog påløbe ekstra omkostninger afhængigt af afstanden og andre faktorer. Kontakt os venligst for yderligere oplysninger."
+      },
+      {
+        "heading": "Hvilke betalingsmetoder accepterer jeres firma?",
+        "description": "Vores firma accepterer forskellige betalingsmetoder såsom kredit-/betalingskort og bankoverførsler. Vi stræber efter at gøre betalingsprocessen så bekvem som muligt for vores kunder."
+      },
+      {
+        "heading": "Kan jeg foretage særlige anmodninger om mad eller drikkevarer under min transport?",
+        "description": "Ja, du kan foretage særlige anmodninger om mad eller drikkevarer under din transport. Informer os venligst om dine krav ved bookingtidspunktet, og vi vil gøre vores bedste for at imødekomme dine behov."
+      },
+      {
+        "heading": "Hvad er jeres politik om rygning eller dampning i jeres køretøjer?",
+        "description": "Rygning og dampning er strengt forbudt i vores køretøjer. Vi opretholder en røgfri miljø for komfort og sikkerhed for alle vores passagerer."
+      },
+      {
+        "heading": "Hvordan kontakter jeg min chauffør, hvis jeg har brug for at foretage ændringer i min transport under turen?",
+        "description": "Du kan kontakte din chauffør direkte ved hjælp af det telefonnummer, der er angivet til dig ved bookingtidspunktet. Hvis du ikke kan få fat i din chauffør, kan du også kontakte vores kundeserviceteam for hjælp."
+      },
+      {
+        "heading": "Kan jeg medbringe kæledyr med mig i køretøjet?",
+        "description": "Ja, du kan medbringe kæledyr med dig i køretøjet. Informer os dog venligst om dit kæledyr ved bookingtidspunktet, så vi kan foretage de nødvendige arrangement."
+      },
+      {
+        "heading": "Hvordan ved jeg, om min reservation er blevet bekræftet?",
+        "description": "Når du har fuldført din reservation, vil du modtage en bekræftelses-e-mail eller -besked fra os. Dette vil fungere som bevis på din reservation og vil omfatte alle detaljer om din transport."
+      },
+      {
+        "heading": "Hvad sker der, hvis mit fly er forsinket, og jeg misser min planlagte afhentningstid til lufthavnstransport?",
+        "description": "Hvis dit fly er forsinket, og du misser din planlagte afhentningstid til lufthavnstransport, bedes du informere os så hurtigt som muligt. Vi vil gøre vores bedste for at tilpasse vores tidsplan og lave alternative arrangementer for din transport."
+      },
+      {
+        "heading": "Hvad er jeres politik for mistede genstande efter transporten?",
+        "description": "Hvis du har efterladt genstande i køretøjet efter din transport, bedes du informere os hurtigst muligt. Vi vil gøre alt for at finde og returnere dine mistede genstande til dig. Vi kan dog ikke holdes ansvarlige for mistede eller beskadigede genstande."
+      }
+    ]
   }
 }
