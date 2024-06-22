@@ -1,12 +1,13 @@
-import React from "react";
-import aboutUsBackgroundImg from "/public/images/about-us-bg.webp";
-import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
 import { NextPageProps } from "@/lib/types";
+import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import aboutUsBackgroundImg from "/public/images/about-us-bg.webp";
 
-const AboutUs = ({ params: { locale } }: NextPageProps) => {
+const CarFleet = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations("about");
+  const t = useTranslations("car_fleet");
+  const tGeneral = useTranslations("general");
 
   return (
     <main>
@@ -33,8 +34,13 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
           p: (chunks) => <p className="mb-4 leading-relaxed">{chunks}</p>,
         })}
       </section>
+
+      <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 py-16 lg:py-20">
+        <h2 className="text-h3 text-center">{t("cta_heading")}</h2>
+        <Button>{tGeneral("book_now")}</Button>
+      </section>
     </main>
   );
 };
 
-export default AboutUs;
+export default CarFleet;

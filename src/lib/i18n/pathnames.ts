@@ -10,4 +10,8 @@ export const pathnames = {
     en: "/about-us",
     da: "/om-os",
   },
+  "/car-fleet": {
+    en: "/car-fleet",
+    da: "/bilflaade",
+  },
 } satisfies Pathnames<typeof locales>;

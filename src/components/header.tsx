@@ -115,15 +115,15 @@ export const Header = ({ locale }: { locale: string }) => {
     },
     {
       text: t("about_us"),
-      link: "/about-us",
+      link: "about-us",
     },
     {
       text: t("services"),
-      link: "/",
+      link: "services",
     },
     {
       text: t("car_fleet"),
-      link: "/",
+      link: "car-fleet",
     },
     {
       text: t("chauffeurs"),

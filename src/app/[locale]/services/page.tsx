@@ -4,9 +4,9 @@ import { useTranslations } from "next-intl";
 import { NextPageProps } from "@/lib/types";
 import { unstable_setRequestLocale } from "next-intl/server";
 
-const AboutUs = ({ params: { locale } }: NextPageProps) => {
+const Services = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);
-  const t = useTranslations("about");
+  const t = useTranslations("services");
 
   return (
     <main>
@@ -24,7 +24,7 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
       </section>
 
       <section className="px-default mx-auto max-w-section py-16 lg:py-20">
-        {t.rich("content", {
+        {t.rich("description", {
           h2: (chunks) => (
             <h2 className="text-h3 mb-4 mt-10 font-bold first:!mt-0 lg:mt-14">
               {chunks}
@@ -32,9 +32,21 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
           ),
           p: (chunks) => <p className="mb-4 leading-relaxed">{chunks}</p>,
         })}
+
+        {[
+          "airport_transfers",
+          "cruise_port_transfers",
+          "business_travel",
+          "leisure_trips_and_days_out",
+          "road_shows",
+          "social_occasion",
+          "fairs_and_events",
+        ].map((key) => {
+          return <div>{t(`${key}.heading`)}</div>;
+        })}
       </section>
     </main>
   );
 };
 
-export default AboutUs;
+export default Services;
