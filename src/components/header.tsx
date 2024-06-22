@@ -127,11 +127,11 @@ export const Header = ({ locale }: { locale: string }) => {
     },
     {
       text: t("chauffeurs"),
-      link: "/",
+      link: "/chauffeurs",
     },
     {
       text: t("faq"),
-      link: "/",
+      link: "/faq",
     },
     {
       text: t("contact"),
@@ -212,7 +212,7 @@ export const Header = ({ locale }: { locale: string }) => {
               <li key={item.text} className="hidden lg:block">
                 <NavigationLink
                   className="p-2 text-sm leading-7 tracking-[0.05em] transition-all hover:text-[#fe6802]"
-                  href={item.link}
+                  href={item.link as any}
                 >
                   {item.text}
                 </NavigationLink>
