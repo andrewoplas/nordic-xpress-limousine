@@ -1,7 +1,8 @@
 {
   "general": {
     "book_now": "Book Now",
-    "contact_us": "Contact Us"
+    "contact_us": "Contact Us",
+    "customer_service": "Customer Service"
   },
   "header": {
     "home": "HOME",
@@ -29,7 +30,6 @@
     "subscribe": "Subscribe",
     "your_email": "Your email"
   },
-
   "homepage": {
     "hero_section": {
       "welcome": "Welcome to Nordic",
@@ -100,7 +100,6 @@
       "heading": "Airport Transfers",
       "description": "Arrive at the airport on time and stress-free with our reliable airport transfer services. Our professional chauffeurs will greet you upon arrival, assist you with your luggage, and take you to your destination in comfort and style. We monitor your flight status to ensure timely pick-up and drop-off."
     },
-
     "cruise_port_transfers": {
       "heading": "Cruise Port Transfers",
       "description": "Start your cruise vacation off on the right foot with our hassle-free cruise port transfer services. We provide efficient and reliable transportation to and from the port, ensuring that you arrive on time and with peace of mind. Our luxury vehicles offer plenty of space for luggage and a comfortable ride to your destination."
@@ -129,7 +128,8 @@
     "fairs_and_events": {
       "heading": "Fairs and Events",
       "description": "Avoid the hassle and stress of navigating through crowded fairs and events with our convenient transportation services. We offer reliable and comfortable transportation to and from various events, ensuring that you arrive on time and ready to enjoy the festivities. Our experienced chauffeurs are familiar with the area and can help you navigate the crowds and traffic."
-    }
+    },
+    "cta_heading": "Experience reliable and luxurious transportation with Nordic Xpress Limousine Service. Book your next ride with us today."
   },
   "car_fleet": {
     "heading": "Car Fleet",
@@ -238,5 +238,10 @@
         "description": "If you have left any items in the vehicle after your transportation, please inform us as soon as possible. We will make every effort to locate and return your lost items to you. However, we cannot be held responsible for any lost or damaged items."
       }
     ]
+  },
+  "contact": {
+    "meta_description": "Our 24/7 professional customer service team is always available to assist you with any questions or concerns, and we go the extra mile to ensure your satisfaction.",
+    "heading": "Contact",
+    "content": "<h2>24/7 Customer Service</h2><p>Our 24/7 professional customer service team is always available to assist you with any questions or concerns, and we go the extra mile to ensure your satisfaction.</p>"
   }
 }

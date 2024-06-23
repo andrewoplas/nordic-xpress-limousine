@@ -1,7 +1,8 @@
 {
   "general": {
     "book_now": "Book Nu",
-    "contact_us": "Kontakt Os"
+    "contact_us": "Kontakt Os",
+    "customer_service": "Kundeservice"
   },
   "header": {
     "home": "FORSIDE",
@@ -91,6 +92,44 @@
     "heading": "Om os",
     "content": "<h2>Nordic Xpress Limousine Service - Din pålidelige transportløsning i Danmark.</h2><p>Velkommen til Nordic Xpress Limousine Service, et dansk-baseret firma etableret i 2023 for at tilbyde transporttjenester til både lokale indbyggere og internationale besøgende. Vores udvalg af tjenester omfatter lufthavnstransport til og fra større lufthavne i Danmark samt transport til forretnings- og fritidsrejser i hele landet. Vi er forpligtet til at levere en pålidelig og effektiv Xpress transporttjeneste, der er tilgængelig døgnet rundt hele året for at imødekomme vores kunders transportbehov.</p><p>Mens lufthavnstransport er vores primære fokus, tilbyder vi også transporttjenester til andre typer rejser i hele Danmark. Vores virksomhed opererer primært på Sjælland, men vi kan også tilbyde transport til andre regioner i Danmark. Derudover udvider vi vores tjenester ud over de danske grænser til Tyskland og Sverige og tilbyder transport til og fra disse nabolande.</p><p>For mere information om vores tjenester og for at udforske vores tilbud detaljeret, besøg venligst vores websides servicemenu.</p><h2>Konkurrencedygtige priser</h2><p>Vi er dedikeret til at tilbyde omkostningseffektive passagertransport services til vores værdsatte kunder. Vi stræber konstant efter at minimere vores udgifter, samtidig med at vi opretholder det høje kvalitetsniveau i vores tjenester. Ved at styre vores omkostninger effektivt er vi i stand til at tilbyde vores tjenester til lavere priser end mange af vores konkurrenter og give vores kunder mere overkommelige muligheder uden at gå på kompromis med kvaliteten.</p><h2>Grøn omstilling</h2><p>I Nordisk Xpress Limousine Service prioriterer vi bæredygtige praksisser og reducering af vores miljøpåvirkning. For at følge vores grønne tankegang har vi foretaget betydelige investeringer i miljøvenlige køretøjer, specifikt ved at skifte til elektrisk drevne muligheder.</p><h2>Hos os kommer kunderne altid først</h2><p>I Nordic Xpress Limousine Service prioriterer vi kundetilfredshed over alt andet, og vores kunder kommer altid i første række. Vi går langt for at sikre, at vores service er skræddersyet til at imødekomme deres behov. Som en del af vores kundeorienterede tilgang udvikler og implementerer vi kontinuerligt moderne passagertransport services.</p><h2>Luksuriøse og komfortable køretøjer</h2><p>Vores luksuriøse og komfortable køretøjer er designet med omhyggeligt udvalgte funktioner i branchen, der sikrer, at vores passagerer får en ekstraordinær rejseoplevelse. Vi går ikke på kompromis med sikkerheden, og derfor har vi implementeret de seneste teknologier og sikkerhedsforanstaltninger for at sikre en tryg rejse. Vores komfortable køretøjer er også udstyret med state-of-the-art bekvemmeligheder, som sikrer en behagelig rejseoplevelse for vores passagerer. Vi er stolte af at kunne tilbyde en førsteklasses service til vores kunder og sørger altid for at opretholde de højeste standarder for kvalitet og komfort i vores køretøjer.</p>",
     "cta_heading": "Oplev luksuriøs transportservice med Nordic Xpress Limousine Service. Book nu eller ring til os for at høre mere om vores Services"
+  },
+  "services": {
+    "heading": "Services",
+    "description": "<h2>24/7 Xpress Persontransport Service</h2><p>På Nordic Xpress Limousine Service forstår vi, at din tid er værdifuld, og vi stræber efter at tilbyde effektive og pålidelige transportløsninger, der kan opfylde dine behov. Vores Xpress transporttjenester er tilgængelige 24/7/365 og opfylder en bred vifte af behov.</p><p>Ved din ankomst vil vores professionelle chauffør hilse dig velkommen på din destination og hjælpe dig med din bagage. Vi er dedikeret til at sikre din komfort og tilfredshed gennem hele din rejse.</p>",
+    "airport_transfers": {
+      "heading": "Lufthavnstransfer",
+      "description": "Ankom til lufthavnen til tiden og uden stress med vores pålidelige lufthavnstransportservice. Læs mere..Vores professionelle chauffører vil hilse dig velkommen ved ankomst, hjælpe dig med din bagage og køre dig til din destination i komfort og stil. Vi overvåger din flystatus for at sikre rettidig afhentning og aflevering."
+    },
+    "cruise_port_transfers": {
+      "heading": "Krydstogshavn transfer",
+      "description": "Start din krydstogtferie på den rigtige fod med vores problemfri krydstogtshavns-transportservice. Vi tilbyder effektiv og pålidelig transport til og fra havnen, så du ankommer til tiden og med ro i sindet. Vores luksuriøse køretøjer tilbyder masser af plads til bagage og en behagelig tur til din destination."
+    },
+
+    "business_travel": {
+      "heading": "Forretningsrejse",
+      "description": "Gør et godt første indtryk med vores professionelle og pålidelige transporttjenester. Vi forstår vigtigheden af punktlighed og effektivitet, når det kommer til forretningsrejser, og vi sigter efter at give en stressfri oplevelse, der giver dig mulighed for at fokusere på dit arbejde. Vores luksuriøse køretøjer tilbyder et behageligt og produktivt miljø til at arbejde på farten."
+    },
+
+    "leisure_trips_and_days_out": {
+      "heading": "Fritidsture og Udflugter",
+      "description": "Nyd en stressfri og mindeværdig fritidsrejseoplevelse med vores komfortable og stilfulde transporttjenester. Vi tilbyder faciliteter som forfriskninger, underholdningsmuligheder og tilpasselige rejseplaner for at forbedre din rejse. Book med os i dag for at rejse i stil og skabe uforglemmelige minder."
+    },
+
+    "road_shows": {
+      "heading": "Roadshows",
+      "description": "Vores transporttjenester sikrer en problemfri og stressfri road show. Med professionelle chauffører og rummelige køretøjer garanterer vi en rettidig og behagelig ankomst af dit team og udstyr. Book vores pålidelige transporttjenester i dag for at gøre din roadshow til en succes."
+    },
+
+    "social_occasion": {
+      "heading": "Sociale Anledninger",
+      "description": "Gør din særlige begivenhed endnu mere mindeværdig med vores luksus transporttjenester. Fra bryllupper til proms, fødselsdage til jubilæer, tilbyder vi personlige løsninger for at sikre, at dine transportbehov bliver mødt med komfort, stil og pålidelighed."
+    },
+
+    "fairs_and_events": {
+      "heading": "Messer og Events",
+      "description": "Undgå besværet og stresset ved at navigere gennem overfyldte messer og events med vores bekvemme transporttjenester. Vi tilbyder pålidelig og behagelig transport til og fra forskellige arrangementer, så du ankommer til tiden og er klar til at nyde festlighederne. Vores erfarne chauffører er fortrolige med området og kan hjælpe dig med at navigere i folkemængderne og trafikken."
+    },
+    "cta_heading": "Oplev pålidelig og luksuriøs transport med Nordic Xpress Limousine Service. Book din næste køretur med os i dag"
   },
   "car_fleet": {
     "heading": "Bilflåde",
@@ -199,5 +238,10 @@
         "description": "Hvis du har efterladt genstande i køretøjet efter din transport, bedes du informere os hurtigst muligt. Vi vil gøre alt for at finde og returnere dine mistede genstande til dig. Vi kan dog ikke holdes ansvarlige for mistede eller beskadigede genstande."
       }
     ]
+  },
+  "contact": {
+    "meta_description": "Vores 24/7 professionelle kundeserviceteam er altid til rådighed for at hjælpe dig med eventuelle spørgsmål eller bekymringer, og vi går den ekstra mil for at sikre din tilfredshed.",
+    "heading": "Kontakt",
+    "content": "<h2>24/7 Kundeservice</h2><p>Vores 24/7 professionelle kundeserviceteam er altid til rådighed for at hjælpe dig med eventuelle spørgsmål eller bekymringer, og vi går den ekstra mil for at sikre din tilfredshed.</p>"
   }
 }
