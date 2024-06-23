@@ -92,11 +92,15 @@
   }
 
   .text-h2 {
-    @apply text-[28px] leading-snug lg:text-[32px];
+    @apply text-2xl leading-snug lg:text-[32px];
   }
 
   .text-h3 {
     @apply text-xl leading-[1.4em] lg:text-2xl;
+  }
+
+  .text-h4 {
+    @apply text-lg leading-[1.4em] lg:text-xl;
   }
 
   .px-default {

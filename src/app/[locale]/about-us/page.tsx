@@ -1,9 +1,8 @@
-import React from "react";
-import aboutUsBackgroundImg from "/public/images/about-us-bg.webp";
-import { useTranslations } from "next-intl";
-import { NextPageProps } from "@/lib/types";
-import { unstable_setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
+import { NextPageProps } from "@/lib/types";
+import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
+import backgroundImg from "/public/images/about-us-bg.webp";
 
 const AboutUs = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);
@@ -14,7 +13,7 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
     <main>
       <section
         className="relative bg-cover bg-center py-32"
-        style={{ backgroundImage: `url(${aboutUsBackgroundImg.src})` }}
+        style={{ backgroundImage: `url(${backgroundImg.src})` }}
       >
         <div className="px-default mx-auto max-w-section">
           <h1 className="text-h1 relative z-10 font-bold text-white">

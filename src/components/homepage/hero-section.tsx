@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Button } from "../ui/button";
 
 export const HeroSection = () => {
   const t = useTranslations("homepage.hero_section");
@@ -27,7 +28,7 @@ export const HeroSection = () => {
       <div className="px-default absolute z-10 flex w-full max-w-section justify-center md:justify-start lg:-mt-[10%] xl:-mt-[20%]">
         <div className="flex flex-col items-center md:items-start">
           <h1
-            className="flex flex-col gap-1 text-center text-2xl font-normal text-white md:gap-4 md:text-left md:text-3xl"
+            className="flex flex-col gap-0 text-center text-2xl font-normal text-white md:gap-4 md:text-left md:text-3xl"
             style={{ textShadow: "3px -1px 5px rgba(0, 0, 0, 0.5)" }}
           >
             {t("welcome")}
@@ -37,12 +38,12 @@ export const HeroSection = () => {
             {t("service_name")}
           </h1>
 
-          <button
-            aria-label="book now"
-            className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] mt-8 rounded-full bg-app-orange px-6 py-2 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 md:px-7 md:py-3 xl:px-7"
+          <Button
+            aria-label={tGeneral("book_now")}
+            className="mt-4 lg:mt-8"
           >
             {tGeneral("book_now")}
-          </button>
+          </Button>
         </div>
       </div>
     </section>

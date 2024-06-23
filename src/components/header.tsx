@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Link as NavigationLink, usePathname } from "../lib/i18n/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Button } from "./ui/button";
 
 const languages = [
   {
@@ -19,47 +20,6 @@ const languages = [
     imgAlt: "flag of Denmark",
     text: "Dansk",
     locale: "da",
-  },
-];
-
-const contacts = [
-  {
-    text: "Kundeservice: +45 70603011",
-    link: "tel:+4570603011",
-    icon: (
-      <svg
-        className="shrink-0"
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10.8469 0.768753C11.0875 0.187503 11.7219 -0.121872 12.3281 0.0437527L15.0781 0.793753C15.6219 0.943753 16 1.4375 16 2C16 9.73125 9.73125 16 2 16C1.4375 16 0.943749 15.6219 0.79375 15.0781L0.0437498 12.3281C-0.121876 11.7219 0.1875 11.0875 0.76875 10.8469L3.76875 9.59688C4.27812 9.38438 4.86875 9.53125 5.21562 9.95938L6.47812 11.5C8.67812 10.4594 10.4594 8.67813 11.5 6.47813L9.95937 5.21875C9.53125 4.86875 9.38438 4.28125 9.59688 3.77188L10.8469 0.771878V0.768753Z"
-          fill="white"
-        />
-      </svg>
-    ),
-  },
-  {
-    text: "Contact@nordiexpresslimousine.dk",
-    link: "mailto:Contact@nordiexpresslimousine.dk",
-    icon: (
-      <svg
-        className="shrink-0"
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 3.5C1.725 3.5 1.5 3.725 1.5 4V4.69063L6.89062 9.11563C7.5375 9.64688 8.46562 9.64688 9.1125 9.11563L14.5 4.69063V4C14.5 3.725 14.275 3.5 14 3.5H2ZM1.5 6.63125V12C1.5 12.275 1.725 12.5 2 12.5H14C14.275 12.5 14.5 12.275 14.5 12V6.63125L10.0625 10.275C8.8625 11.2594 7.13438 11.2594 5.9375 10.275L1.5 6.63125ZM0 4C0 2.89688 0.896875 2 2 2H14C15.1031 2 16 2.89688 16 4V12C16 13.1031 15.1031 14 14 14H2C0.896875 14 0 13.1031 0 12V4Z"
-          fill="white"
-        />
-      </svg>
-    ),
   },
 ];
 
@@ -106,7 +66,10 @@ const socialMedias = [
 
 export const Header = ({ locale }: { locale: string }) => {
   const t = useTranslations("header");
+  const tGeneral = useTranslations("general");
   const pathname = usePathname();
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
     {
@@ -115,15 +78,15 @@ export const Header = ({ locale }: { locale: string }) => {
     },
     {
       text: t("about_us"),
-      link: "about-us",
+      link: "/about-us",
     },
     {
       text: t("services"),
-      link: "services",
+      link: "/services",
     },
     {
       text: t("car_fleet"),
-      link: "car-fleet",
+      link: "/car-fleet",
     },
     {
       text: t("chauffeurs"),
@@ -135,7 +98,48 @@ export const Header = ({ locale }: { locale: string }) => {
     },
     {
       text: t("contact"),
-      link: "/",
+      link: "/contact",
+    },
+  ];
+
+  const contacts = [
+    {
+      text: `${tGeneral("customer_service")}: +45 70603011`,
+      link: "tel:+4570603011",
+      icon: (
+        <svg
+          className="shrink-0"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.8469 0.768753C11.0875 0.187503 11.7219 -0.121872 12.3281 0.0437527L15.0781 0.793753C15.6219 0.943753 16 1.4375 16 2C16 9.73125 9.73125 16 2 16C1.4375 16 0.943749 15.6219 0.79375 15.0781L0.0437498 12.3281C-0.121876 11.7219 0.1875 11.0875 0.76875 10.8469L3.76875 9.59688C4.27812 9.38438 4.86875 9.53125 5.21562 9.95938L6.47812 11.5C8.67812 10.4594 10.4594 8.67813 11.5 6.47813L9.95937 5.21875C9.53125 4.86875 9.38438 4.28125 9.59688 3.77188L10.8469 0.771878V0.768753Z"
+            fill="white"
+          />
+        </svg>
+      ),
+    },
+    {
+      text: "Contact@nordiexpresslimousine.dk",
+      link: "mailto:Contact@nordiexpresslimousine.dk",
+      icon: (
+        <svg
+          className="shrink-0"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 3.5C1.725 3.5 1.5 3.725 1.5 4V4.69063L6.89062 9.11563C7.5375 9.64688 8.46562 9.64688 9.1125 9.11563L14.5 4.69063V4C14.5 3.725 14.275 3.5 14 3.5H2ZM1.5 6.63125V12C1.5 12.275 1.725 12.5 2 12.5H14C14.275 12.5 14.5 12.275 14.5 12V6.63125L10.0625 10.275C8.8625 11.2594 7.13438 11.2594 5.9375 10.275L1.5 6.63125ZM0 4C0 2.89688 0.896875 2 2 2H14C15.1031 2 16 2.89688 16 4V12C16 13.1031 15.1031 14 14 14H2C0.896875 14 0 13.1031 0 12V4Z"
+            fill="white"
+          />
+        </svg>
+      ),
     },
   ];
 
@@ -219,70 +223,52 @@ export const Header = ({ locale }: { locale: string }) => {
               </li>
             ))}
 
-            <HeaderMobile menuItems={menuItems} />
+            <li className="hidden md:block xl:ml-3">
+              <Button aria-label={tGeneral("book_now")}>
+                {tGeneral("book_now")}
+              </Button>
+            </li>
+
+            <li className="ml-5 grid place-items-center lg:hidden">
+              <button
+                onClick={() =>
+                  setIsMobileMenuOpen((currentValue) => !currentValue)
+                }
+                className="flex flex-col justify-center"
+                aria-label="mobile menu icon"
+              >
+                <span
+                  className={cn(
+                    "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
+                    {
+                      "translate-y-1 rotate-45": isMobileMenuOpen,
+                      "-translate-y-1": !isMobileMenuOpen,
+                    },
+                  )}
+                ></span>
+                <span
+                  className={cn(
+                    "my-1 block h-0.5 w-4 rounded-full bg-white transition-all duration-300 ease-out",
+                    {
+                      "opacity-0": isMobileMenuOpen,
+                      "opacity-100": !isMobileMenuOpen,
+                    },
+                  )}
+                ></span>
+                <span
+                  className={cn(
+                    "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
+                    {
+                      "-translate-y-2 -rotate-45": isMobileMenuOpen,
+                      "translate-y-1": !isMobileMenuOpen,
+                    },
+                  )}
+                ></span>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
-    </>
-  );
-};
-
-type Props = {
-  menuItems: {
-    text: string;
-    link: string;
-  }[];
-};
-
-export const HeaderMobile = ({ menuItems }: Props) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  return (
-    <>
-      <li className="hidden md:block xl:ml-3">
-        <button
-          aria-label="book now"
-          className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
-        >
-          BOOK NOW
-        </button>
-      </li>
-
-      <li className="ml-5 grid place-items-center lg:hidden">
-        <button
-          onClick={() => setIsMobileMenuOpen((currentValue) => !currentValue)}
-          className="flex flex-col justify-center"
-          aria-label="mobile menu icon"
-        >
-          <span
-            className={cn(
-              "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
-              {
-                "translate-y-1 rotate-45": isMobileMenuOpen,
-                "-translate-y-1": !isMobileMenuOpen,
-              },
-            )}
-          ></span>
-          <span
-            className={cn(
-              "my-1 block h-0.5 w-4 rounded-full bg-white transition-all duration-300 ease-out",
-              {
-                "opacity-0": isMobileMenuOpen,
-                "opacity-100": !isMobileMenuOpen,
-              },
-            )}
-          ></span>
-          <span
-            className={cn(
-              "block h-0.5 w-[26px] rounded-full bg-white transition-all duration-300 ease-out",
-              {
-                "-translate-y-2 -rotate-45": isMobileMenuOpen,
-                "translate-y-1": !isMobileMenuOpen,
-              },
-            )}
-          ></span>
-        </button>
-      </li>
 
       <div
         className={cn(
@@ -306,12 +292,9 @@ export const HeaderMobile = ({ menuItems }: Props) => {
           ))}
 
           <li>
-            <button
-              aria-label="book now"
-              className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-5 py-3 font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
-            >
-              BOOK NOW
-            </button>
+            <Button aria-label={tGeneral("book_now")}>
+              {tGeneral("book_now")}
+            </Button>
           </li>
 
           <li>

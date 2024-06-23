@@ -31,14 +31,14 @@ export const CtaSection = () => {
           <h2 className="text-h2 text-center text-app-orange">
             {t("heading")}
           </h2>
-          <p className="mt-4 text-center text-2xl text-white">
+          <p className="mt-4 text-center text-lg sm:text-xl lg:text-2xl text-white">
             {t("description")}
           </p>
           <button
-            aria-label="book now"
-            className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] mx-auto mt-12 rounded-full bg-app-orange px-5 py-3 text-sm font-semibold leading-7 text-white transition-all hover:saturate-150 xl:px-7"
+            aria-label={tGeneral("book_now")}
+            className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] mx-auto mt-12 rounded-full bg-app-orange px-5 py-3 text-sm font-semibold uppercase leading-7 text-white transition-all hover:saturate-150 xl:px-7"
           >
-            {[tGeneral("book_now")]}
+            {tGeneral("book_now")}
           </button>
         </div>
 

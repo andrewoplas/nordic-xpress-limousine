@@ -104,7 +104,7 @@ const FeatureContent = ({
           href="/"
           className="mt-5 block text-app-orange transition-all hover:saturate-150"
         >
-          {/* {t("book_now")} */}
+          {t("book_now")}
         </Link>
       </div>
     </>

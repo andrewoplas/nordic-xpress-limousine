@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
-import aboutUsBackgroundImg from "/public/images/about-us-bg.webp";
+import backgroundImg from "/public/images/about-us-bg.webp";
 
 const CarFleet = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);
@@ -13,7 +13,7 @@ const CarFleet = ({ params: { locale } }: NextPageProps) => {
     <main>
       <section
         className="relative bg-cover bg-center py-32"
-        style={{ backgroundImage: `url(${aboutUsBackgroundImg.src})` }}
+        style={{ backgroundImage: `url(${backgroundImg.src})` }}
       >
         <div className="px-default mx-auto max-w-section">
           <h1 className="text-h1 relative z-10 font-bold text-white">

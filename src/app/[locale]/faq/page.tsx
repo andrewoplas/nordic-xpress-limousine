@@ -27,12 +27,18 @@ const FAQ = ({ params: { locale } }: NextPageProps) => {
       <section className="px-default mx-auto max-w-section py-16 lg:py-20">
         <p className="leading-relaxed">{t("description")}</p>
 
-        <Accordion type="single" className="mt-8 space-y-4" collapsible>
+        <Accordion
+          type="single"
+          className="mx-auto mt-12 max-w-4xl space-y-4"
+          collapsible
+        >
           {Array.from({ length: 22 }).map((_x, index) => {
             const heading = t(`items.${index}.heading`);
             return (
               <AccordionItem key={heading} value={heading}>
-                <AccordionTrigger>{heading}</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  {heading}
+                </AccordionTrigger>
                 <AccordionContent>
                   {t(`items.${index}.description`)}
                 </AccordionContent>
