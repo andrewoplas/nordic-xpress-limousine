@@ -18,11 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const alternates: any = {};
 
     locales.forEach((locale) => {
-      alternates[locale] = `${getBaseUrl()}/${locale}/${pathname}/`;
+      alternates[locale] = `${getBaseUrl()}/${locale}${pathname[locale]}/`;
     });
 
     return {
-      url: `${getBaseUrl()}/${key}/`,
+      url: `${getBaseUrl()}${key}/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
