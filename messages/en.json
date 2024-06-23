@@ -2,7 +2,8 @@
   "general": {
     "book_now": "Book Now",
     "contact_us": "Contact Us",
-    "customer_service": "Customer Service"
+    "customer_service": "Customer Service",
+    "meta_description": "Affordable transportation that doesn't compromise on quality"
   },
   "header": {
     "home": "HOME",
