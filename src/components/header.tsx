@@ -231,11 +231,11 @@ export const Header = ({ locale }: { locale: string }) => {
 
             <li className="ml-5 grid place-items-center lg:hidden">
               <button
+                aria-label="mobile menu icon"
+                className="flex flex-col justify-center"
                 onClick={() =>
                   setIsMobileMenuOpen((currentValue) => !currentValue)
                 }
-                className="flex flex-col justify-center"
-                aria-label="mobile menu icon"
               >
                 <span
                   className={cn(
