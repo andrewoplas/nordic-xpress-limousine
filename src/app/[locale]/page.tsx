@@ -5,6 +5,19 @@ import { FeaturesSection } from "../../components/homepage/features-section";
 import { HeroSection } from "../../components/homepage/hero-section";
 import { ServicesSection } from "../../components/homepage/services-section";
 import Head from "next/head";
+import { getBaseUrl } from "@/lib/helper";
+
+export async function generateMetadata() {
+  return {
+    alternates: {
+      languages: {
+        en: `${getBaseUrl()}/en/`,
+        de: `${getBaseUrl()}/da/`,
+        "x-default": `${getBaseUrl()}/en/`,
+      },
+    },
+  };
+}
 
 export default function Home({ params: { locale } }: NextPageProps) {
   unstable_setRequestLocale(locale);
