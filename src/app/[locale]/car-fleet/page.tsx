@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { getAlternatesMetadata, getSiteName } from "@/lib/helper";
+import { pathnames } from "@/lib/i18n/pathnames";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import backgroundImg from "/public/images/about-us-bg.webp";
-import { getSiteName } from "@/lib/helper";
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
@@ -11,7 +12,10 @@ export async function generateMetadata(props: { params: { locale: string } }) {
     namespace: "car_fleet",
   });
 
-  return { title: `${t("heading")} - ${getSiteName()}` };
+  return {
+    title: `${t("heading")} - ${getSiteName()}`,
+    ...getAlternatesMetadata(pathnames["/car-fleet"]),
+  };
 }
 
 const CarFleet = ({ params: { locale } }: NextPageProps) => {

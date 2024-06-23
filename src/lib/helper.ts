@@ -11,3 +11,16 @@ export const getBaseUrl = () => {
 };
 
 export const getSiteName = () => "Nordic Xpress Limousine Service";
+
+export const getAlternatesMetadata = (pathname: {
+  en: string;
+  da: string;
+}) => ({
+  alternates: {
+    languages: {
+      en: `${getBaseUrl()}/en${pathname.en}/`,
+      de: `${getBaseUrl()}/da${pathname.da}/`,
+      "x-default": `${getBaseUrl()}/en${pathname.en}/`,
+    },
+  },
+});

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { getSiteName } from "@/lib/helper";
+import { getAlternatesMetadata, getSiteName } from "@/lib/helper";
+import { pathnames } from "@/lib/i18n/pathnames";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -11,7 +12,10 @@ export async function generateMetadata(props: { params: { locale: string } }) {
     namespace: "chauffeurs",
   });
 
-  return { title: `${t("heading")} - ${getSiteName()}` };
+  return {
+    title: `${t("heading")} - ${getSiteName()}`,
+    ...getAlternatesMetadata(pathnames["/chauffeurs"]),
+  };
 }
 
 const Chauffeurs = ({ params: { locale } }: NextPageProps) => {

@@ -24,4 +24,8 @@ export const pathnames = {
     en: "/contact",
     da: "/kontakt",
   },
+  "/services": {
+    en: "/services",
+    da: "/services",
+  },
 } satisfies Pathnames<typeof locales>;

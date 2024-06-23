@@ -1,19 +1,25 @@
 import { Button } from "@/components/ui/button";
-import { getSiteName } from "@/lib/helper";
+import { getAlternatesMetadata, getSiteName } from "@/lib/helper";
+import { pathnames } from "@/lib/i18n/pathnames";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import backgroundImg from "/public/images/about-us-bg.webp";
 import Head from "next/head";
+import backgroundImg from "/public/images/about-us-bg.webp";
 
-export async function generateMetadata(props: { params: { locale: string } }) {
+export const generateMetadata = async (props: {
+  params: { locale: string };
+}) => {
   const t = await getTranslations({
     locale: props.params.locale,
     namespace: "about",
   });
 
-  return { title: `${t("heading")} - ${getSiteName()}` };
-}
+  return {
+    title: `${t("heading")} - ${getSiteName()}`,
+    ...getAlternatesMetadata(pathnames["/about-us"]),
+  };
+};
 
 const AboutUs = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);
@@ -23,22 +29,11 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
   return (
     <>
       <Head>
-        <link
-          rel="alternate"
-          href="https://www.nordicxpresslimousine.dk/en/homepage/"
-          hrefLang="en"
-        />
-        <link
-          rel="alternate"
-          href="https://www.nordicxpresslimousine.dk/da/forside/"
-          hrefLang="da"
-        />
-        <link
-          rel="alternate"
-          href="https://www.nordicxpresslimousine.dk/"
-          hrefLang="x-default"
-        />
+        <link rel="alternate" href="/en/about-us/" hrefLang="en" />
+        <link rel="alternate" href="/en/om-os/" hrefLang="da" />
+        <link rel="alternate" href="/en/about-us/" hrefLang="x-default" />
       </Head>
+
       <main>
         <section
           className="relative bg-cover bg-center py-32"
