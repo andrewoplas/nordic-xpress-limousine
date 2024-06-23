@@ -65,7 +65,7 @@ const Services = ({ params: { locale } }: NextPageProps) => {
             const heading = t(`${key}.heading`);
 
             return (
-              <div>
+              <div key={key}>
                 <Image
                   src={icons[index].src}
                   alt={`icon of ${heading}`}
