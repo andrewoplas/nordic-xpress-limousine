@@ -1,9 +1,9 @@
-import React from "react";
-import backgroundImg from "/public/images/calling.jpg";
-import { useTranslations } from "next-intl";
+import { getSiteName } from "@/lib/helper";
 import { NextPageProps } from "@/lib/types";
+import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import Link from "next/link";
+import backgroundImg from "/public/images/calling.jpg";
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
@@ -11,10 +11,7 @@ export async function generateMetadata(props: { params: { locale: string } }) {
     namespace: "contact",
   });
 
-  return {
-    title: t("heading"),
-    description: t("meta_description"),
-  };
+  return { title: `${t("heading")} - ${getSiteName()}` };
 }
 
 const Contact = ({ params: { locale } }: NextPageProps) => {

@@ -1,8 +1,18 @@
 import { Button } from "@/components/ui/button";
+import { getSiteName } from "@/lib/helper";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import backgroundImg from "/public/images/opening-car-door-bg.png";
+
+export async function generateMetadata(props: { params: { locale: string } }) {
+  const t = await getTranslations({
+    locale: props.params.locale,
+    namespace: "chauffeurs",
+  });
+
+  return { title: `${t("heading")} - ${getSiteName()}` };
+}
 
 const Chauffeurs = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);

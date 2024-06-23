@@ -1,8 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import backgroundImg from "/public/images/about-us-bg.webp";
+import { getSiteName } from "@/lib/helper";
+
+export async function generateMetadata(props: { params: { locale: string } }) {
+  const t = await getTranslations({
+    locale: props.params.locale,
+    namespace: "car_fleet",
+  });
+
+  return { title: `${t("heading")} - ${getSiteName()}` };
+}
 
 const CarFleet = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);

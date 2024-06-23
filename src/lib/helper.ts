@@ -9,3 +9,5 @@ export const getBaseUrl = () => {
 
   return "http://localhost:3000";
 };
+
+export const getSiteName = () => "Nordic Xpress Limousine Service";

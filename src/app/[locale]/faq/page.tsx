@@ -4,9 +4,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { getSiteName } from "@/lib/helper";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+
+export async function generateMetadata(props: { params: { locale: string } }) {
+  const t = await getTranslations({
+    locale: props.params.locale,
+    namespace: "faq",
+  });
+
+  return { title: `${t("heading")} - ${getSiteName()}` };
+}
 
 const FAQ = ({ params: { locale } }: NextPageProps) => {
   unstable_setRequestLocale(locale);

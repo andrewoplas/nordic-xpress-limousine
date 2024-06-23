@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
+import { getSiteName } from "@/lib/helper";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import iconCalendarDays from "/public/fa-icons/calendar-days-solid.svg";
 import iconChampagneGlasses from "/public/fa-icons/champagne-glasses-solid.svg";
@@ -10,7 +12,15 @@ import iconShip from "/public/fa-icons/ship-solid.svg";
 import iconSuitcase from "/public/fa-icons/suitcase-solid.svg";
 import iconTaxi from "/public/fa-icons/taxi-solid.svg";
 import backgroundImg from "/public/images/calling.jpg";
-import { Button } from "@/components/ui/button";
+
+export async function generateMetadata(props: { params: { locale: string } }) {
+  const t = await getTranslations({
+    locale: props.params.locale,
+    namespace: "services",
+  });
+
+  return { title: `${t("heading")} - ${getSiteName()}` };
+}
 
 const icons = [
   iconPlaneArrival,
