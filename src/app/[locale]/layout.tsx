@@ -1,7 +1,8 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { getSiteName } from "@/lib/helper";
 import { locales } from "@/lib/i18n/pathnames";
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -9,8 +10,10 @@ import {
   unstable_setRequestLocale,
 } from "next-intl/server";
 import { Source_Sans_3 } from "next/font/google";
+import Head from "next/head";
 import "../globals.css";
-import { getSiteName } from "@/lib/helper";
+import { jsonLd } from "@/lib/config";
+import Script from "next/script";
 
 const font = Source_Sans_3({ subsets: ["latin"] });
 
@@ -74,6 +77,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={font.className}>
       <body className="overflow-x-hidden">
+        <Script
+          id="schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           {children}
