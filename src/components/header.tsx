@@ -231,7 +231,10 @@ export const Header = ({ locale }: { locale: string }) => {
 
             <li className="ml-5 grid place-items-center lg:hidden">
               <button
-                aria-label="mobile menu icon"
+                type="button"
+                aria-controls="mobileNavbar"
+                aria-expanded="false"
+                aria-label="mobile toggle navigation"
                 className="flex flex-col justify-center"
                 onClick={() =>
                   setIsMobileMenuOpen((currentValue) => !currentValue)

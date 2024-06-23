@@ -101,6 +101,7 @@ const FeatureContent = ({
         <p>{description}</p>
 
         <Link
+          aria-label={t("book_now")}
           href="/"
           className="mt-5 block text-app-orange transition-all hover:saturate-150"
         >
