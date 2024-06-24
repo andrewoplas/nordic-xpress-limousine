@@ -7,6 +7,7 @@ import { Link as NavigationLink, usePathname } from "../lib/i18n/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
+import siteLogoImg from "/public/images/site-logo-hd.png";
 
 const languages = [
   {
@@ -203,10 +204,9 @@ export const Header = ({ locale }: { locale: string }) => {
         <div className="px-default mx-auto flex max-w-section items-center justify-between gap-6">
           <NavigationLink href="/" locale={locale}>
             <Image
-              src="/images/site-logo.png"
+              quality={100}
+              src={siteLogoImg}
               alt="site logo"
-              width={176}
-              height={60}
               className="w-[125px] sm:w-[150px] md:w-[176px]"
             />
           </NavigationLink>
