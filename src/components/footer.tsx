@@ -54,16 +54,16 @@ export const Footer = () => {
   const tGeneral = useTranslations("general");
 
   const companyMenu = [
-    { text: t("about_us"), link: "#" },
-    { text: t("services"), link: "#" },
-    { text: t("car_fleet"), link: "#" },
-    { text: t("chauffeurs"), link: "#" },
+    { text: t("about_us"), link: "/about-us" },
+    { text: t("services"), link: "/services" },
+    { text: t("car_fleet"), link: "/car-fleet" },
+    { text: t("chauffeurs"), link: "/chauffeurs" },
     { text: t("careers"), link: "#" },
   ];
 
   const informationMenu = [
-    { text: t("contact"), link: "#" },
-    { text: t("faq"), link: "#" },
+    { text: t("contact"), link: "/contact" },
+    { text: t("faq"), link: "/faq" },
     { text: t("booking"), link: "#" },
     { text: t("terms_and_conditions"), link: "#" },
     { text: t("privacy_policy"), link: "#" },
@@ -162,21 +162,6 @@ export const Footer = () => {
                 </Link>
               </div>
             </div>
-
-            <ul className="flex items-center gap-2 mt-4">
-              {socialMedias.map((socialMedia) => (
-                <li key={socialMedia.label}>
-                  <Link
-                    href={socialMedia.link}
-                    aria-label={socialMedia.label}
-                    target="_blank"
-                    className="transition-all hover:saturate-150"
-                  >
-                    {socialMedia.icon}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           <div>
