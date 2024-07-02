@@ -8,10 +8,9 @@ export const HeroSection = () => {
   return (
     <section className="relative flex flex-col items-center justify-center overflow-hidden bg-[#A3A7AD]">
       <div className="w-full">
-        <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-bl from-zinc-500 to-zinc-800 opacity-50"></div>
+        <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-bl from-zinc-500 to-zinc-800 opacity-10"></div>
 
         <video
-          // className="min-h-full w-auto min-w-full max-w-none"
           className="w-full"
           loop
           autoPlay

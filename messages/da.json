@@ -55,6 +55,10 @@
         "heading": "Fritidsrejser",
         "description": "Nyd en stressfri og mindeværdig fritidsrejseoplevelse med vores komfortable og stilfulde transporttjenester."
       },
+      "private_tours": {
+        "heading": "Private ture",
+        "description": "Slap af og oplev et vidunderligt eventyr. Vores kvalificerede guider tager sig af alt for en uforglemmelig rejse."
+      },
       "cta": {
         "heading": "Få mere information om vores øvrige tilgængelige services",
         "button_text": "LÆS MERE"
@@ -65,17 +69,21 @@
         "heading": "Emissionsfri luksusbiler",
         "description": "Vores forpligtelse til bæredygtig luksus strækker sig til vores omfattende flåde af Mercedes-Benz elbiler. Vi tilbyder en række muligheder for at imødekomme din gruppes behov, hvilket sikrer en komfortabel og stilfuld rejse til enhver lejlighed. Uanset om det er en lufthavnstransport, et firmaarrangement eller en særlig fest, er vores emissionsfrie flåde klar til at overgå dine forventninger."
       },
-      "wide_coverage": {
-        "heading": "Bred dækning",
-        "description": "Baseret i Danmark leverer vi luksuriøse, nul-emissionstransporttjenester i hele de nordiske lande (Sverige, Finland, Norge) og til/fra store europæiske knudepunkter som Tyskland og England samt Dubai. Uanset om du har brug for lufthavnstransport, forretningsrejser eller en chauffør til en speciel begivenhed, er vores flåde klar til at tage dig til din destination i komfort og stil."
-      },
       "affordable_luxury": {
         "heading": "Overkommelig luksus",
         "description": "Lad dig ikke nøjes med mindre, når det kommer til dine transportbehov. Vores prisvenlige luksusservice garanterer en pålidelig, komfortabel og stilfuld tur hver gang. Vi er stolte af at levere enestående værdi og sikre, at du når din destination med stil uden at gå på kompromis med dit budget."
       },
-      "private_tours": {
-        "heading": "Private ture med kvalificerede guider",
-        "description": "Vores forpligtelse til bæredygtig luksus strækker sig til vores omfattende flåde af Mercedes-Benz elbiler. Vi tilbyder en række muligheder for at imødekomme din gruppes behov, hvilket sikrer en komfortabel og stilfuld rejse til enhver lejlighed. Uanset om det er en lufthavnstransport, et firmaarrangement eller en særlig fest, er vores emissionsfrie flåde klar til at overgå dine forventninger."
+      "24_hour_service": {
+        "heading": "24-timers ekspresservice",
+        "description": "Vores 24/7 ekspres limousineservice er den perfekte løsning. Uanset om du er i København eller hvor som helst i Danmark, får vi dig hurtigt og komfortabelt til din destination med praktiske afhentnings- og afleveringsmuligheder, dag eller nat. Oplev luksus og bekvemmelighed på din tidsplan."
+      },
+      "chauffeurs": {
+        "heading": "Kvalificerede chauffører",
+        "description": "Vores højtuddannede chauffører prioriterer din sikkerhed og velvære, hvilket sikrer en jævn og afslappende tur. Vi får dig hurtigt og komfortabelt til din destination med praktiske afhentnings- og afleveringsmuligheder, dag eller nat. Oplev luksus og største diskretion på din tidsplan."
+      },
+      "wide_coverage": {
+        "heading": "Bred dækning",
+        "description": "Baseret i Danmark leverer vi luksuriøse, nul-emissionstransporttjenester i hele de nordiske lande (Sverige, Finland, Norge) og til/fra store europæiske knudepunkter som Tyskland og England samt Dubai. Uanset om du har brug for lufthavnstransport, forretningsrejser eller en chauffør til en speciel begivenhed, er vores flåde klar til at tage dig til din destination i komfort og stil."
       }
     },
     "quality_section": {
@@ -105,30 +113,29 @@
       "heading": "Krydstogshavn transfer",
       "description": "Start din krydstogtferie på den rigtige fod med vores problemfri krydstogtshavns-transportservice. Vi tilbyder effektiv og pålidelig transport til og fra havnen, så du ankommer til tiden og med ro i sindet. Vores luksuriøse køretøjer tilbyder masser af plads til bagage og en behagelig tur til din destination."
     },
-
     "business_travel": {
       "heading": "Forretningsrejse",
       "description": "Gør et godt første indtryk med vores professionelle og pålidelige transporttjenester. Vi forstår vigtigheden af punktlighed og effektivitet, når det kommer til forretningsrejser, og vi sigter efter at give en stressfri oplevelse, der giver dig mulighed for at fokusere på dit arbejde. Vores luksuriøse køretøjer tilbyder et behageligt og produktivt miljø til at arbejde på farten."
     },
-
     "leisure_trips_and_days_out": {
       "heading": "Fritidsture og Udflugter",
       "description": "Nyd en stressfri og mindeværdig fritidsrejseoplevelse med vores komfortable og stilfulde transporttjenester. Vi tilbyder faciliteter som forfriskninger, underholdningsmuligheder og tilpasselige rejseplaner for at forbedre din rejse. Book med os i dag for at rejse i stil og skabe uforglemmelige minder."
     },
-
     "road_shows": {
       "heading": "Roadshows",
       "description": "Vores transporttjenester sikrer en problemfri og stressfri road show. Med professionelle chauffører og rummelige køretøjer garanterer vi en rettidig og behagelig ankomst af dit team og udstyr. Book vores pålidelige transporttjenester i dag for at gøre din roadshow til en succes."
     },
-
     "social_occasion": {
       "heading": "Sociale Anledninger",
       "description": "Gør din særlige begivenhed endnu mere mindeværdig med vores luksus transporttjenester. Fra bryllupper til proms, fødselsdage til jubilæer, tilbyder vi personlige løsninger for at sikre, at dine transportbehov bliver mødt med komfort, stil og pålidelighed."
     },
-
     "fairs_and_events": {
       "heading": "Messer og Events",
       "description": "Undgå besværet og stresset ved at navigere gennem overfyldte messer og events med vores bekvemme transporttjenester. Vi tilbyder pålidelig og behagelig transport til og fra forskellige arrangementer, så du ankommer til tiden og er klar til at nyde festlighederne. Vores erfarne chauffører er fortrolige med området og kan hjælpe dig med at navigere i folkemængderne og trafikken."
+    },
+    "private_tours": {
+      "heading": "Private ture",
+      "description": "Slap af og oplev et vidunderligt eventyr. Vores kvalificerede guider tager sig af alt for en uforglemmelig rejse."
     },
     "cta_heading": "Oplev pålidelig og luksuriøs transport med Nordic Xpress Limousine Service. Book din næste køretur med os i dag"
   },

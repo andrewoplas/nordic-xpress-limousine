@@ -55,6 +55,10 @@
         "heading": "Leisure Travel",
         "description": "Enjoy a stress-free and memorable leisure travel experience with our comfortable transportation services."
       },
+      "private_tours": {
+        "heading": "Private Tours",
+        "description": "Relax and experience a wonderfull adventure. Our qualified guides take care of everything for an unforgettable journey."
+      },
       "cta": {
         "heading": "Find out more about our other available services",
         "button_text": "LEARN MORE"
@@ -65,17 +69,21 @@
         "heading": "Zero-Emission Luxury Vehicles",
         "description": "Our commitment to sustainable luxury extends to our extensive fleet of Mercedes-Benz electric vehicles. We offer a variety of options to accommodate your group's needs, ensuring a comfortable and stylish journey for every occasion. Whether it's an airport transfer, a corporate event, or a special celebration, our emission-free fleet is ready to exceed your expectations."
       },
-      "wide_coverage": {
-        "heading": "Wide Coverage",
-        "description": "Based in Denmark, we provide luxurious, zero-emission transportation services throughout the Nordic countries (Sweden, Finland, Norway) and to/from major European hubs like Germany and England, as well as Dubai. Whether you need airport transfers, business travel, or a special event chauffeur, our fleet is ready to take you to your destination in comfort and style."
-      },
       "affordable_luxury": {
         "heading": "Affordable Luxury",
         "description": "Don't settle for less when it comes to your transportation needs. Our affordable luxury service guarantees a reliable, comfortable, and stylish ride every time. We pride ourselves on delivering exceptional value, ensuring you reach your destination in style without compromising on your budget."
       },
-      "private_tours": {
-        "heading": "Private Tours with Qualified Guides",
-        "description": "Our commitment to sustainable luxury extends to our extensive fleet of Mercedes-Benz electric vehicles. We offer a variety of options to accommodate your group's needs, ensuring a comfortable and stylish journey for every occasion. Whether it's an airport transfer, a corporate event, or a special celebration, our emission-free fleet is ready to exceed your expectations."
+      "24_hour_service": {
+        "heading": "24-Hour Express Service",
+        "description": "Our 24/7 express limousine service is the perfect solution. Whether you're in Copenhagen or anywhere in Denmark, we'll get you to your destination quickly and comfortably with convenient pickup and drop-off options, day or night. Experience luxury and convenience on your schedule."
+      },
+      "chauffeurs": {
+        "heading": "Qualified Chauffeurs",
+        "description": "Our highly trained chauffeurs prioritize your safety and well-being, ensuring a smooth and relaxing ride. We'll get you to your destination quickly and comfortably with convenient pickup and drop-off options, day or night. Experience luxury and utmost discretion on your schedule."
+      },
+      "wide_coverage": {
+        "heading": "Wide Coverage",
+        "description": "Based in Denmark, we provide luxurious, zero-emission transportation services throughout the Nordic countries (Sweden, Finland, Norway) and to/from major European hubs like Germany and England, as well as Dubai. Whether you need airport transfers, business travel, or a special event chauffeur, our fleet is ready to take you to your destination in comfort and style."
       }
     },
     "quality_section": {
@@ -105,30 +113,29 @@
       "heading": "Cruise Port Transfers",
       "description": "Start your cruise vacation off on the right foot with our hassle-free cruise port transfer services. We provide efficient and reliable transportation to and from the port, ensuring that you arrive on time and with peace of mind. Our luxury vehicles offer plenty of space for luggage and a comfortable ride to your destination."
     },
-
     "business_travel": {
       "heading": "Business Travel",
       "description": "Make a great first impression with our professional and reliable business travel services. We understand the importance of punctuality and efficiency when it comes to business travel, and we aim to provide a stress-free experience that allows you to focus on your work. Our luxury vehicles offer a comfortable and productive environment for working on-the-go."
     },
-
     "leisure_trips_and_days_out": {
       "heading": "Leisure Trips and Days Out",
       "description": "Enjoy a stress-free and memorable leisure travel experience with our comfortable and stylish transportation services. We offer amenities such as refreshments, entertainment options, and customizable itineraries to enhance your journey. Book with us today to travel in style and create unforgettable memories."
     },
-
     "road_shows": {
       "heading": "Road Shows",
       "description": "Our transportation services ensure a seamless and stress-free road show. With professional drivers and spacious vehicles, we guarantee on-time and comfortable arrival of your team and equipment. Book our reliable transportation services today to make your road show a success."
     },
-
     "social_occasion": {
       "heading": "Social Occasion",
       "description": "Make your special event even more memorable with our luxury transportation services. From weddings to proms, birthdays to anniversaries, we offer personalized solutions to ensure that your transportation needs are met with comfort, style, and reliability."
     },
-
     "fairs_and_events": {
       "heading": "Fairs and Events",
       "description": "Avoid the hassle and stress of navigating through crowded fairs and events with our convenient transportation services. We offer reliable and comfortable transportation to and from various events, ensuring that you arrive on time and ready to enjoy the festivities. Our experienced chauffeurs are familiar with the area and can help you navigate the crowds and traffic."
+    },
+    "private_tours": {
+      "heading": "Private Tours",
+      "description": "Relax and experience a wonderfull adventure. Our qualified guides take care of everything for an unforgettable journey."
     },
     "cta_heading": "Experience reliable and luxurious transportation with Nordic Xpress Limousine Service. Book your next ride with us today."
   },

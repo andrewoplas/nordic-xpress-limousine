@@ -4,6 +4,7 @@ import iconPlaneArrival from "/public/fa-icons/plane-arrival-solid.svg";
 import iconShip from "/public/fa-icons/ship-solid.svg";
 import iconSuitcase from "/public/fa-icons/suitcase-solid.svg";
 import iconTaxi from "/public/fa-icons/taxi-solid.svg";
+import iconPrivateTours from "/public/fa-icons/private-tours.svg";
 import { Button } from "../ui/button";
 
 export const ServicesSection = () => {
@@ -30,6 +31,11 @@ export const ServicesSection = () => {
       description: t("leisure_travel.description"),
       imgSrc: iconTaxi.src,
     },
+    {
+      heading: t("private_tours.heading"),
+      description: t("private_tours.description"),
+      imgSrc: iconPrivateTours.src,
+    },
   ];
 
   return (
@@ -38,7 +44,7 @@ export const ServicesSection = () => {
         {t("heading")}
       </h2>
 
-      <div className="-mx-6 grid grid-cols-1 gap-4 divide-dashed divide-[#E0E0E0] sm:grid-cols-2 lg:-mx-8 lg:grid-cols-4 lg:gap-0 lg:divide-x-[1px]">
+      <div className="-mx-6 grid grid-cols-1 gap-4 divide-dashed divide-[#E0E0E0] sm:grid-cols-2 lg:-mx-8 lg:grid-cols-5 lg:gap-0 lg:divide-x-[1px]">
         {services.map((type) => (
           <div
             className="flex flex-col items-center px-6 py-4 sm:items-start lg:px-8"

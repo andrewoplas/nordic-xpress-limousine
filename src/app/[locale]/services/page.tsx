@@ -8,6 +8,7 @@ import Image from "next/image";
 import iconCalendarDays from "/public/fa-icons/calendar-days-solid.svg";
 import iconChampagneGlasses from "/public/fa-icons/champagne-glasses-solid.svg";
 import iconPlaneArrival from "/public/fa-icons/plane-arrival-solid.svg";
+import iconPrivateTours from "/public/fa-icons/private-tours.svg";
 import iconRoad from "/public/fa-icons/road-solid.svg";
 import iconShip from "/public/fa-icons/ship-solid.svg";
 import iconSuitcase from "/public/fa-icons/suitcase-solid.svg";
@@ -34,6 +35,7 @@ const icons = [
   iconRoad,
   iconChampagneGlasses,
   iconCalendarDays,
+  iconPrivateTours,
 ];
 
 const Services = ({ params: { locale } }: NextPageProps) => {
@@ -75,6 +77,7 @@ const Services = ({ params: { locale } }: NextPageProps) => {
             "road_shows",
             "social_occasion",
             "fairs_and_events",
+            "private_tours",
           ].map((key, index) => {
             const heading = t(`${key}.heading`);
 
