@@ -72,7 +72,7 @@ export const Footer = () => {
   return (
     <>
       <footer className="bg-app-gray">
-        <div className="px-default mx-auto grid max-w-section gap-16 py-20 text-center text-white md:grid-cols-2 md:text-left lg:grid-cols-4 lg:gap-4">
+        <div className="px-default text-shadow mx-auto grid max-w-section gap-16 py-20 text-center text-white md:grid-cols-2 md:text-left lg:grid-cols-4 lg:gap-4">
           <div className="flex flex-col items-center justify-center md:block">
             <Heading>{t("contact")}</Heading>
 
@@ -97,7 +97,7 @@ export const Footer = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <span className="text-sm leading-normal">
+                <span className="text-shadow leading-normal">
                   Nordic Xpress Limousine Service
                   <br />
                   Søvangsvej 1
@@ -135,7 +135,7 @@ export const Footer = () => {
                 </svg>
 
                 <Link href="tel:+4570603011">
-                  <span className="text-sm leading-normal">
+                  <span className="text-shadow leading-normal">
                     {tGeneral("customer_service")}: +45 70603011
                   </span>
                 </Link>
@@ -156,7 +156,7 @@ export const Footer = () => {
                 </svg>
 
                 <Link href="mailto:Contact@nordiexpresslimousine.dk">
-                  <span className="text-sm leading-normal">
+                  <span className="text-shadow leading-normal">
                     Contact@nordiexpresslimousine.dk
                   </span>
                 </Link>
@@ -171,7 +171,7 @@ export const Footer = () => {
               {companyMenu.map((menu) => (
                 <li key={menu.text}>
                   <Link
-                    className="transition-all hover:text-app-orange"
+                    className="text-shadow transition-all hover:text-app-orange"
                     href={menu.link}
                   >
                     {menu.text}
@@ -188,7 +188,7 @@ export const Footer = () => {
               {informationMenu.map((menu) => (
                 <li key={menu.text}>
                   <Link
-                    className="transition-all hover:text-app-orange"
+                    className="text-shadow transition-all hover:text-app-orange"
                     href={menu.link}
                   >
                     {menu.text}
@@ -267,7 +267,7 @@ export const Footer = () => {
 
       <div className="bg-black py-6">
         <div className="px-default mx-auto flex max-w-section flex-col items-center justify-between gap-4 lg:flex-row">
-          <span className="text-center text-app-gray lg:text-left">
+          <span className="text-center text-white lg:text-left">
             © 2024 Copyright Nordic Xpress Limousine Service. All Rights
             Reserved
           </span>
@@ -320,5 +320,5 @@ export const Footer = () => {
 };
 
 const Heading = ({ children }: { children: React.ReactNode }) => (
-  <p className="mb-5 text-lg leading-6">{children}</p>
+  <p className="text-shadow mb-5 text-lg leading-6">{children}</p>
 );
