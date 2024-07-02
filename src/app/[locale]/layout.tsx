@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { jsonLd } from "@/lib/config";
 import { getSiteName } from "@/lib/helper";
 import { locales } from "@/lib/i18n/pathnames";
 import type { Viewport } from "next";
@@ -9,13 +10,9 @@ import {
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
-import { Source_Sans_3 } from "next/font/google";
-import Head from "next/head";
-import "../globals.css";
-import { jsonLd } from "@/lib/config";
+import localFont from "next/font/local";
 import Script from "next/script";
-
-const font = Source_Sans_3({ subsets: ["latin"] });
+import "../globals.css";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -64,6 +61,32 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+const font = localFont({
+  src: [
+    {
+      path: "../../../public/fonts/SourceSansPro-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/SourceSansPro-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/SourceSansPro-Semibold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/SourceSansPro-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-family",
+});
+
 export default async function LocaleLayout({
   children,
   params: { locale },
@@ -75,7 +98,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={font.className}>
+    <html lang={locale} className={font.variable}>
       <body className="overflow-x-hidden">
         <Script
           id="schema"
