@@ -104,6 +104,7 @@ export default async function LocaleLayout({
           id="schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          strategy="beforeInteractive"
         />
         <Script
           src="https://embed.tawk.to/66854b55eaf3bd8d4d17954d/1i1sashbk"
