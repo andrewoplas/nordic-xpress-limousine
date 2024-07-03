@@ -107,7 +107,7 @@ export default async function LocaleLayout({
         />
         <Script
           src="https://embed.tawk.to/66854b55eaf3bd8d4d17954d/1i1sashbk"
-          strategy="lazyOnload"
+          strategy="beforeInteractive"
         />
 
         <NextIntlClientProvider messages={messages}>
