@@ -105,6 +105,10 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Script
+          src="https://embed.tawk.to/66854b55eaf3bd8d4d17954d/1i1sashbk"
+          strategy="lazyOnload"
+        />
 
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
