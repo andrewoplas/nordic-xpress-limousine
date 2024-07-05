@@ -1,11 +1,18 @@
 "use client";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { cn } from "@/lib/utils";
+import { BriefcaseBusiness, CircleUser, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { Link as NavigationLink, usePathname } from "../lib/i18n/navigation";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
+import { Link as NavigationLink, usePathname } from "../lib/i18n/navigation";
 import { Button } from "./ui/button";
 import siteLogoImg from "/public/images/site-logo-hd.png";
 
@@ -196,6 +203,33 @@ export const Header = ({ locale }: { locale: string }) => {
                 </NavigationLink>
               </li>
             ))}
+
+            <li>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    aria-label="button login"
+                    className="border-none bg-transparent font-normal normal-case outline-none hover:bg-transparent hover:text-white"
+                    variant="outline"
+                  >
+                    <div className="flex items-center gap-2">
+                      <CircleUser />
+                      <span>Log in</span>
+                    </div>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-44">
+                  <DropdownMenuItem className="focus:bg-app-orange focus:text-white">
+                    <User className="mr-2 h-4 w-4" />
+                    <span>Private User</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem className="focus:bg-app-orange focus:text-white">
+                    <BriefcaseBusiness className="mr-2 h-4 w-4" />
+                    <span>Business User</span>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </li>
           </ul>
         </div>
       </nav>
