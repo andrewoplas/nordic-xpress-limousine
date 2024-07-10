@@ -7,6 +7,7 @@ import imgPaymentGooglePay from "/public/images/payment-google-pay.svg";
 import imgPaymentMastercard from "/public/images/payment-mastercard.svg";
 import imgPaymentMobilePay from "/public/images/payment-mobile-pay.svg";
 import imgPaymentVisa from "/public/images/payment-visa.svg";
+import { Button } from "./ui/button";
 
 const socialMedias = [
   {
@@ -198,69 +199,46 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col gap-8">
-            <div>
-              <Heading>{t("accepted_payment")}</Heading>
+          <div>
+            <Heading>{t("accepted_payment")}</Heading>
 
-              <div className="flex flex-wrap justify-center gap-[3px] md:justify-start">
-                <Image
-                  src={imgPaymentVisa}
-                  alt="logo of Visa"
-                  className="w-12 rounded-md"
-                />
-                <Image
-                  src={imgPaymentMastercard}
-                  alt="logo of Mastercard"
-                  className="w-12 rounded-md"
-                />
+            <div className="flex flex-wrap justify-center gap-[3px] md:justify-start">
+              <Image
+                src={imgPaymentVisa}
+                alt="logo of Visa"
+                className="w-12 rounded-md"
+              />
+              <Image
+                src={imgPaymentMastercard}
+                alt="logo of Mastercard"
+                className="w-12 rounded-md"
+              />
 
-                <Image
-                  src={imgPaymentMobilePay}
-                  alt="logo of Mobile Pay"
-                  className="w-12 rounded-md"
-                />
-                <Image
-                  src={imgPaymentApplePay}
-                  alt="logo of Apple Pay"
-                  className="w-12 rounded-md"
-                />
-                <Image
-                  src={imgPaymentGooglePay}
-                  alt="logo of Google Pay"
-                  className="w-12 rounded-md"
-                />
-              </div>
+              <Image
+                src={imgPaymentMobilePay}
+                alt="logo of Mobile Pay"
+                className="w-12 rounded-md"
+              />
+              <Image
+                src={imgPaymentApplePay}
+                alt="logo of Apple Pay"
+                className="w-12 rounded-md"
+              />
+              <Image
+                src={imgPaymentGooglePay}
+                alt="logo of Google Pay"
+                className="w-12 rounded-md"
+              />
             </div>
 
-            <div>
-              <Heading>{t("subscribe")}</Heading>
-
-              <div className="mx-auto flex max-w-[350px] gap-2 md:mx-0">
-                <input
-                  className="grow rounded-full bg-white p-4 text-black"
-                  placeholder={t("your_email")}
-                ></input>
-                <button
-                  type="submit"
-                  aria-label="submit"
-                  className="flex aspect-square size-14 h-full shrink-0 items-center justify-center rounded-full bg-app-orange"
-                >
-                  <svg
-                    className="w-8"
-                    width="10"
-                    height="15"
-                    viewBox="0 0 10 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.91211 7.06592V6.07764C6.91211 5.62646 7.4707 5.39014 7.79297 5.7124L9.64062 7.58154C9.85547 7.7749 9.85547 8.09717 9.64062 8.29053L7.79297 10.1597C7.4707 10.4819 6.91211 10.2456 6.91211 9.79443V8.78467H0.445312C0.294922 8.78467 0.1875 8.67725 0.1875 8.52686V7.32373C0.1875 7.19482 0.294922 7.06592 0.445312 7.06592H6.91211Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
+            <Button asChild className="mt-8 max-w-64 w-full">
+              <Link
+                href="https://stats.sender.net/forms/bqPVRa/view"
+                target="_blank"
+              >
+                {t("subscribe")}
+              </Link>
+            </Button>
           </div>
         </div>
       </footer>
