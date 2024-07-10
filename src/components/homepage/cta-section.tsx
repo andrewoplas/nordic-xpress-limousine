@@ -9,7 +9,7 @@ export const CtaSection = () => {
 
   const stats = [
     {
-      value: "23.076",
+      value: "24.868",
       label: t("stats_section.transfers"),
     },
     {

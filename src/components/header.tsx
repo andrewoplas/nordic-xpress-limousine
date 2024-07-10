@@ -101,10 +101,6 @@ export const Header = ({ locale }: { locale: string }) => {
       link: "/chauffeurs",
     },
     {
-      text: t("faq"),
-      link: "/faq",
-    },
-    {
       text: t("career"),
       link: "/career",
     },

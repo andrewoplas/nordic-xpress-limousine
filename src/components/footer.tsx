@@ -125,7 +125,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="lg:pl-16">
             <Heading>{t("company")}</Heading>
 
             <ul className="space-y-2">

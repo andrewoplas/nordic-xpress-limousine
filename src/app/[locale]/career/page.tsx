@@ -10,6 +10,7 @@ import iconCompetitiveCompensation from "/public/fa-icons/money-bag-solid.svg";
 import iconOpportunitiesForAdvancement from "/public/fa-icons/rank-solid.svg";
 import backgroundImg from "/public/images/opening-car-door-bg.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function generateMetadata(props: { params: { locale: string } }) {
   const t = await getTranslations({
@@ -117,9 +118,13 @@ const Career = ({ params: { locale } }: NextPageProps) => {
         </div>
       </section>
 
-      <section className="mt-16 px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
+      <section className="px-default mx-auto mt-16 flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
         <h2 className="text-center text-xl">{t("cta_heading")}</h2>
-        <Button>{tGeneral("contact_us")}</Button>
+        <Button asChild className="mt-4">
+          <Link href="mailto:contact@nordiexpresslimousine.dk">
+            {tGeneral("contact_us")}
+          </Link>
+        </Button>
       </section>
     </main>
   );
