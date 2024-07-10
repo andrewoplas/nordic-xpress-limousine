@@ -133,7 +133,7 @@ export const Footer = () => {
                 <li key={menu.text}>
                   <NavigationLink
                     className="text-shadow transition-all hover:text-app-orange"
-                    href={menu.link}
+                    href={menu.link as any}
                   >
                     {menu.text}
                   </NavigationLink>
@@ -150,7 +150,7 @@ export const Footer = () => {
                 <li key={menu.text}>
                   <NavigationLink
                     className="text-shadow transition-all hover:text-app-orange"
-                    href={menu.link}
+                    href={menu.link as any}
                   >
                     {menu.text}
                   </NavigationLink>
