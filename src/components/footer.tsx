@@ -2,53 +2,13 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Link as NavigationLink } from "../lib/i18n/navigation";
+import { Button } from "./ui/button";
 import imgPaymentApplePay from "/public/images/payment-apple-pay.svg";
 import imgPaymentGooglePay from "/public/images/payment-google-pay.svg";
 import imgPaymentMastercard from "/public/images/payment-mastercard.svg";
 import imgPaymentMobilePay from "/public/images/payment-mobile-pay.svg";
 import imgPaymentVisa from "/public/images/payment-visa.svg";
-import { Button } from "./ui/button";
-
-const socialMedias = [
-  {
-    link: "https://www.facebook.com/profile.php?id=61556833815560",
-    label: "Facebook",
-    icon: (
-      <svg
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="30" height="30" rx="3" fill="#3B5998" />
-        <path
-          d="M18.3839 15.625H16.3331V21.75H13.5988V15.625H11.3566V13.1094H13.5988V11.168C13.5988 8.98047 14.9113 7.75 16.9073 7.75C17.8644 7.75 18.8761 7.94141 18.8761 7.94141V10.1016H17.755C16.6613 10.1016 16.3331 10.7578 16.3331 11.4688V13.1094H18.7667L18.3839 15.625Z"
-          fill="white"
-        />
-      </svg>
-    ),
-  },
-  {
-    link: "https://www.linkedin.com/company/nordic-xpress-limousine-service",
-    label: "LinkedIn",
-    icon: (
-      <svg
-        width="30"
-        height="30"
-        viewBox="0 0 30 30"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="30" height="30" rx="3" fill="#0077B5" />
-        <path
-          d="M11.9894 20H9.44641V11.8242H11.9894V20ZM10.7042 10.7305C9.91125 10.7305 9.255 10.0469 9.255 9.22656C9.255 8.43359 9.91125 7.77734 10.7042 7.77734C11.5245 7.77734 12.1808 8.43359 12.1808 9.22656C12.1808 10.0469 11.5245 10.7305 10.7042 10.7305ZM21.4777 20H18.962V16.0352C18.962 15.0781 18.9347 13.875 17.6222 13.875C16.3097 13.875 16.1183 14.8867 16.1183 15.9531V20H13.5753V11.8242H16.0089V12.9453H16.0363C16.3917 12.3164 17.212 11.6328 18.4425 11.6328C21.0128 11.6328 21.505 13.3281 21.505 15.5156V20H21.4777Z"
-          fill="white"
-        />
-      </svg>
-    ),
-  },
-];
 
 export const Footer = () => {
   const t = useTranslations("footer");
@@ -59,7 +19,7 @@ export const Footer = () => {
     { text: t("services"), link: "/services" },
     { text: t("car_fleet"), link: "/car-fleet" },
     { text: t("chauffeurs"), link: "/chauffeurs" },
-    { text: t("careers"), link: "#" },
+    { text: t("careers"), link: "/career" },
   ];
 
   const informationMenu = [
@@ -171,12 +131,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               {companyMenu.map((menu) => (
                 <li key={menu.text}>
-                  <Link
+                  <NavigationLink
                     className="text-shadow transition-all hover:text-app-orange"
                     href={menu.link}
                   >
                     {menu.text}
-                  </Link>
+                  </NavigationLink>
                 </li>
               ))}
             </ul>
@@ -188,12 +148,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               {informationMenu.map((menu) => (
                 <li key={menu.text}>
-                  <Link
+                  <NavigationLink
                     className="text-shadow transition-all hover:text-app-orange"
                     href={menu.link}
                   >
                     {menu.text}
-                  </Link>
+                  </NavigationLink>
                 </li>
               ))}
             </ul>
@@ -231,7 +191,7 @@ export const Footer = () => {
               />
             </div>
 
-            <Button asChild className="mt-8 max-w-64 w-full">
+            <Button asChild className="mt-8 w-full max-w-64">
               <Link
                 href="https://stats.sender.net/forms/bqPVRa/view"
                 target="_blank"
