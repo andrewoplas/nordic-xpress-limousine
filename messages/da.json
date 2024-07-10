@@ -12,6 +12,7 @@
     "car_fleet": "BILFLÅDE",
     "chauffeurs": "CHAUFFØRER",
     "faq": "SPØRGSMÅL & SVAR",
+    "career": "KARRIERE",
     "contact": "KONTAKT"
   },
   "footer": {
@@ -148,6 +149,41 @@
     "heading": "Chauffører",
     "content": "<h2>Pålidelige og professionelle chauffører</h2><p>Nordic Xpress Limousine Service besidder et team af erfarne, pålidelige og professionelle chauffører, der er dedikerede til at sikre, at vores kunder modtager en høj grad af service og ekspertise på hver tur.</p><h2>Kurser og uddannelse</h2><p>Vi er glade for at kunne tilbyde vores kunder kvalificerede og erfarne chauffører, der har gennemført alle relevante kurser for at kunne arbejde i branchen. Vores primære målsætning er at levere professionelle chauffører, der er veluddannede og opdaterede med de seneste standarder og bestemmelser.</p><p>Du kan stole på os til at levere en sikker, pålidelig og behagelig oplevelse hver gang du kører med os.</p><h2>Geografisk kendskab</h2><p>Vores erfarne og dygtige chauffører har en omfattende viden om geografien i de områder, hvor vi tilbyder vores tjenester. Dette giver dem evnen til at navigere med lethed og sikre, at vores kunder ankommer til deres destinationer til tiden og uden problemer.</p><p>Vores chauffører er også yderst bekendte med de lokale turiststeder og attraktioner, hvilket giver dem mulighed for at give værdifulde vejledninger og rådgivning til vores kunder. Med vores chaufførers ekspertise og geografiske kendskab kan vores kunder være sikre på, at de får en behagelig og problemfri transportoplevelse.</p><h2>Uniform</h2><p>Hos Nordic Xpress Limousine Service forstår vi vigtigheden af at fremstå professionelle og stræber efter at opretholde en høj standard for vores udseende til enhver tid. Vores største prioritet er at sikre, at vores kunder føler sig komfortable og trygge, når de rejser med os, hvilket inkluderer at sikre, at vores chauffører er passende klædt på til lejligheden. Vi er stolte af at tilbyde en service, der ikke kun er funktionel, men også stilfuld og visuelt appellerende, hvilket afspejler vores engagement i at levere en topklasses oplevelse til vores kunder.</p>",
     "cta_heading": "Så hvorfor vente? Kontakt os i dag for at bestille en professionel chauffør og oplev komforten og bekvemmeligheden af vores service på første hånd"
+  },
+  "career": {
+    "heading": "Din karriere starter her",
+    "description": "Hos Nordic Xpress Limousine Service mener vi, at vores medarbejdere er vores største aktiv. Vi er forpligtet til at tilbyde en givende arbejdsplads, hvor du kan udvikle dine færdigheder og bidrage til vores succes.",
+    "perks": {
+      "heading": "Hvorfor vælge Nordic Xpress?",
+      "competitive_compensation": {
+        "heading": "Konkurrencedygtig kompensation",
+        "description": "Vi tilbyder attraktive løn- og fordelspakker."
+      },
+      "professional_development": {
+        "heading": "Professionel udvikling",
+        "description": "Vi investerer i vores medarbejderes vækst gennem uddannelses- og mentorprogrammer."
+      },
+      "positive_work_environment": {
+        "heading": "Positivt arbejdsmiljø",
+        "description": "Vi fremmer en støttende og samarbejdende atmosfære, hvor alle føler sig værdsat."
+      },
+      "opportunities_for_advancement": {
+        "heading": "Muligheder for avancement",
+        "description": "Vi fremmer indefra og tilskynder til karriereudvikling."
+      }
+    },
+    "opening": {
+      "heading": "Aktuelle åbninger",
+      "chauffeurs": {
+        "heading": "Chauffører",
+        "description": "Har du en passion for kørsel og et engagement i exceptionel service? Slut dig til vores team af professionelle chauffører. Kravene omfatter et gyldigt kørekort, rent kørekort og fremragende kommunikationsevner."
+      },
+      "customer_service_representatives": {
+        "heading": "Kundeservice repræsentanter",
+        "description": "Er du et menneske med evner til at løse problemer? Hjælp os med at levere enestående kundeoplevelser. Kravene omfatter stærke kommunikationsevner, opmærksomhed på detaljer og en passion for kundeservice."
+      }
+    },
+    "cta_heading": "Klar til at ansøge? Indsend dit CV og et følgebrev, der beskriver dine kvalifikationer og interesse for Nordic Xpress"
   },
   "faq": {
     "heading": "Spørgsmål & Svar",

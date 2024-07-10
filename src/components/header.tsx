@@ -105,6 +105,10 @@ export const Header = ({ locale }: { locale: string }) => {
       link: "/faq",
     },
     {
+      text: t("career"),
+      link: "/career",
+    },
+    {
       text: t("contact"),
       link: "/contact",
     },

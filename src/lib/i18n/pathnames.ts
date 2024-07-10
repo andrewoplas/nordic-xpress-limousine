@@ -16,6 +16,10 @@ export const pathnames = {
     en: "/chauffeurs",
     da: "/chauffoerer",
   },
+  "/career": {
+    en: "/career",
+    da: "/karriere",
+  },
   "/faq": {
     en: "/faq",
     da: "/spoergsmaal-svar",

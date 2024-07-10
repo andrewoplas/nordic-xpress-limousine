@@ -12,6 +12,7 @@
     "car_fleet": "CAR FLEET",
     "chauffeurs": "CHAUFFEURS",
     "faq": "FAQ",
+    "career": "CAREER",
     "contact": "CONTACT"
   },
   "footer": {
@@ -148,6 +149,41 @@
     "heading": "Chauffeurs",
     "content": "<h2>Reliable, and professional chauffeurs</h2><p>Nordic Xpress Limousine Service has a team of experienced, reliable, and professional chauffeurs who are dedicated to ensuring that our clients receive a high level of service and expertise on every ride.</p><h2>Courses and Education</h2><p>We take pride in providing skilled, qualified, and experienced chauffeurs who have successfully completed all the necessary courses and hold the required certifications to excel in the transportation industry.  You can trust us to deliver a safe, reliable, and enjoyable experience every time you ride with us.</p><h2>Geographic & Tourist sites knowledge</h2><p>Our skilled chauffeurs possess good knowledge regarding the geography of the region. This allows them to navigate the roads with ease and ensure that you arrive at your destination on time and without any complications.</p><p>In addition, our chauffeurs are intimately familiar with the local tourist sites, enabling them to provide valuable guidance and assistance to our esteemed clients.</p><h2>Uniform</h2><p>At Nordic Xpress Limousine Service we understand the importance of projecting a professional image and aim to maintain a high standard of appearance at all times. Our top priority is to ensure that our clients feel comfortable and confident while traveling with us, which includes making sure our drivers are appropriately dressed for the occasion. We take pride in providing a service that's not only functional but also stylish and visually appealing, reflecting our commitment to delivering a top-quality experience for our clients.</p>",
     "cta_heading": "So why wait? Contact us today to book a professional chauffeur and experience the comfort and convenience of our service first-hand"
+  },
+  "career": {
+    "heading": "Your Career Starts Here",
+    "description": "At Nordic Xpress Limousine Service, we believe our employees are our greatest asset. We're committed to providing a rewarding workplace where you can grow your skills and contribute to our success.",
+    "perks": {
+      "heading": "Why Choose Nordic Xpress?",
+      "competitive_compensation": {
+        "heading": "Competitive Compensation",
+        "description": "We offer attractive salaries and benefits packages."
+      },
+      "professional_development": {
+        "heading": "Professional Development",
+        "description": "We invest in our employees' growth through training and mentorship programs."
+      },
+      "positive_work_environment": {
+        "heading": "Positive Work Environment",
+        "description": "We foster a supportive and collaborative atmosphere where everyone feels valued."
+      },
+      "opportunities_for_advancement": {
+        "heading": "Opportunities for Advancement",
+        "description": "We promote from within and encourage career progression."
+      }
+    },
+    "opening": {
+      "heading": "Current Openings",
+      "chauffeurs": {
+        "heading": "Chauffeurs",
+        "description": "Do you have a passion for driving and a commitment to exceptional service? Join our team of professional chauffeurs. Requirements include a valid driver's license, clean driving record, and excellent communication skills."
+      },
+      "customer_service_representatives": {
+        "heading": "Customer Service Representatives",
+        "description": "Are you a people person with a knack for problem-solving? Help us deliver outstanding customer experiences. Requirements include strong communication skills, attention to detail, and a passion for customer service."
+      }
+    },
+    "cta_heading": "Ready to Apply? Submit your resume and a cover letter outlining your qualifications and interest in Nordic Xpress"
   },
   "faq": {
     "heading": "Frequently Asked Questions",
