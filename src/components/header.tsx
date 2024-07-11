@@ -153,7 +153,7 @@ export const Header = ({ locale }: { locale: string }) => {
 
   return (
     <>
-      <nav className="hidden bg-black py-4 text-white md:block">
+      <nav className="hidden bg-black py-4 text-white lg:block">
         <div className="px-default mx-auto flex max-w-section items-center gap-6">
           <ul className="flex grow gap-6">
             {contacts.map((contact) => (
@@ -319,12 +319,13 @@ export const Header = ({ locale }: { locale: string }) => {
         <ul className="text-orange flex flex-col items-center gap-6">
           {menuItems.map((item) => (
             <li key={item.text}>
-              <Link
+              <NavigationLink
                 className="p-2 text-lg leading-7 tracking-[0.05em] text-white transition-all hover:text-[#fe6802]"
-                href={item.link}
+                href={item.link as any}
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.text}
-              </Link>
+              </NavigationLink>
             </li>
           ))}
 
