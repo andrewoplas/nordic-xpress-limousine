@@ -2,6 +2,7 @@ import React from "react";
 import imgBg from "/public/images/opening-car-door-bg.png";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const CtaSection = () => {
   const t = useTranslations("homepage.quality_section");
@@ -35,8 +36,14 @@ export const CtaSection = () => {
           <p className="mt-4 text-center text-lg text-white sm:text-xl lg:text-2xl">
             {t("description")}
           </p>
-          <Button aria-label={tGeneral("book_now")} className="mx-auto mt-12">
-            {tGeneral("book_now")}
+          <Button
+            asChild
+            aria-label={tGeneral("book_now")}
+            className="mx-auto mt-12"
+          >
+            <Link href="https://www.booking.nordicxpresslimousine.dk/en/booking/">
+              {tGeneral("book_now")}
+            </Link>
           </Button>
         </div>
 

@@ -5,6 +5,7 @@ import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import Image from "next/image";
+import Link from "next/link";
 import iconCalendarDays from "/public/fa-icons/calendar-days-solid.svg";
 import iconChampagneGlasses from "/public/fa-icons/champagne-glasses-solid.svg";
 import iconPlaneArrival from "/public/fa-icons/plane-arrival-solid.svg";
@@ -102,7 +103,11 @@ const Services = ({ params: { locale } }: NextPageProps) => {
 
       <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
         <h2 className="text-center text-xl">{t("cta_heading")}</h2>
-        <Button>{tGeneral("book_now")}</Button>
+        <Button asChild>
+          <Link href="https://www.booking.nordicxpresslimousine.dk/en/booking/">
+            {tGeneral("book_now")}
+          </Link>
+        </Button>
       </section>
     </main>
   );

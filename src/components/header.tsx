@@ -258,8 +258,10 @@ export const Header = ({ locale }: { locale: string }) => {
             ))}
 
             <li className="hidden md:block xl:ml-3">
-              <Button aria-label={tGeneral("book_now")}>
-                {tGeneral("book_now")}
+              <Button aria-label={tGeneral("book_now")} asChild>
+                <Link href="https://www.booking.nordicxpresslimousine.dk/en/booking/">
+                  {tGeneral("book_now")}
+                </Link>
               </Button>
             </li>
 
@@ -330,8 +332,10 @@ export const Header = ({ locale }: { locale: string }) => {
           ))}
 
           <li>
-            <Button aria-label={tGeneral("book_now")}>
-              {tGeneral("book_now")}
+            <Button aria-label={tGeneral("book_now")} asChild>
+              <Link href="https://www.booking.nordicxpresslimousine.dk/en/booking/">
+                {tGeneral("book_now")}
+              </Link>
             </Button>
           </li>
 

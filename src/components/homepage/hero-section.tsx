@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 export const HeroSection = () => {
@@ -40,8 +41,11 @@ export const HeroSection = () => {
           <Button
             aria-label={tGeneral("book_now")}
             className="mt-4 lg:mt-8"
+            asChild
           >
-            {tGeneral("book_now")}
+            <Link href="https://www.booking.nordicxpresslimousine.dk/en/booking/">
+              {tGeneral("book_now")}
+            </Link>
           </Button>
         </div>
       </div>

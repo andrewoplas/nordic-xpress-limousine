@@ -4,6 +4,7 @@ import { pathnames } from "@/lib/i18n/pathnames";
 import { NextPageProps } from "@/lib/types";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import Link from "next/link";
 import backgroundImg from "/public/images/about-us-bg.webp";
 
 export async function generateMetadata(props: { params: { locale: string } }) {
@@ -51,7 +52,11 @@ const CarFleet = ({ params: { locale } }: NextPageProps) => {
 
       <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
         <h2 className="text-center text-xl">{t("cta_heading")}</h2>
-        <Button>{tGeneral("book_now")}</Button>
+        <Button asChild>
+          <Link href="https://www.booking.nordicxpresslimousine.dk/en/booking/">
+            {tGeneral("book_now")}
+          </Link>
+        </Button>
       </section>
     </main>
   );

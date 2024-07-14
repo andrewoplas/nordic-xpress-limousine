@@ -111,7 +111,7 @@ const FeatureContent = ({
 
         <Link
           aria-label={t("book_now")}
-          href="/"
+          href="https://www.booking.nordicxpresslimousine.dk/en/booking/"
           className="mt-5 block text-app-orange transition-all hover:saturate-150"
         >
           {t("book_now")}
