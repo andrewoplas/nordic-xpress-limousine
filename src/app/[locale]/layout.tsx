@@ -13,6 +13,7 @@ import {
 import localFont from "next/font/local";
 import Script from "next/script";
 import "../globals.css";
+import openGraph from "/public/images/opengraph-image.jpg";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -30,7 +31,7 @@ export async function generateMetadata(props: { params: { locale: string } }) {
     title: getSiteName(),
     description: t("meta_description"),
     openGraph: {
-      images: "/opengraph-image.jpg",
+      images: openGraph,
     },
     icons: [
       {
