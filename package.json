@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pull": "git pull"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.0",

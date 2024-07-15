@@ -1,11 +1,12 @@
+import { Link } from "@/lib/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { Button } from "../ui/button";
 import iconPlaneArrival from "/public/fa-icons/plane-arrival-solid.svg";
+import iconPrivateTours from "/public/fa-icons/private-tours.svg";
 import iconShip from "/public/fa-icons/ship-solid.svg";
 import iconSuitcase from "/public/fa-icons/suitcase-solid.svg";
 import iconTaxi from "/public/fa-icons/taxi-solid.svg";
-import iconPrivateTours from "/public/fa-icons/private-tours.svg";
-import { Button } from "../ui/button";
 
 export const ServicesSection = () => {
   const t = useTranslations("homepage.services_section");
@@ -76,7 +77,7 @@ export const ServicesSection = () => {
           aria-label={t("cta.button_text")}
           className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-6 py-2 text-sm font-semibold uppercase leading-7 text-white transition-all hover:saturate-150 md:px-7 md:py-3"
         >
-          {t("cta.button_text")}
+          <Link href="/services">{t("cta.button_text")}</Link>
         </Button>
       </div>
     </section>

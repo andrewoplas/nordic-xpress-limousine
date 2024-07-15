@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import Head from "next/head";
 import backgroundImg from "/public/images/about-us-bg.webp";
+import Link from "next/link";
 
 export const generateMetadata = async (props: {
   params: { locale: string };
@@ -61,7 +62,11 @@ const AboutUs = ({ params: { locale } }: NextPageProps) => {
 
         <section className="px-default mx-auto flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
           <h2 className="text-center text-xl">{t("cta_heading")}</h2>
-          <Button>{tGeneral("contact_us")}</Button>
+          <Button asChild className="mt-4">
+            <Link href="mailto:contact@nordiexpresslimousine.dk">
+              {tGeneral("contact_us")}
+            </Link>
+          </Button>
         </section>
       </main>
     </>
