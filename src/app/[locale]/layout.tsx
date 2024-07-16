@@ -31,7 +31,7 @@ export async function generateMetadata(props: { params: { locale: string } }) {
     title: getSiteName(),
     description: t("meta_description"),
     metadataBase: new URL("https://www.nordicxpresslimousine.dk"),
-    openGraph: { images: openGraph },
+    openGraph: { images: openGraph.src },
     icons: [
       {
         rel: "apple-touch-icon",
