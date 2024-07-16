@@ -116,9 +116,9 @@ export const Footer = () => {
                   />
                 </svg>
 
-                <Link href="mailto:Contact@nordiexpresslimousine.dk">
+                <Link href="mailto:Contact@nordicxpresslimousine.dk">
                   <span className="text-shadow leading-normal">
-                    Contact@nordiexpresslimousine.dk
+                    Contact@nordicxpresslimousine.dk
                   </span>
                 </Link>
               </div>

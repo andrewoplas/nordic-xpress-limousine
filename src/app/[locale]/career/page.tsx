@@ -121,7 +121,7 @@ const Career = ({ params: { locale } }: NextPageProps) => {
       <section className="px-default mx-auto mt-16 flex max-w-section flex-col items-center justify-center gap-3 pb-16 lg:pb-20">
         <h2 className="text-center text-xl">{t("cta_heading")}</h2>
         <Button asChild className="mt-4">
-          <Link href="mailto:contact@nordiexpresslimousine.dk">
+          <Link href="mailto:Contact@nordicxpresslimousine.dk">
             {tGeneral("contact_us")}
           </Link>
         </Button>

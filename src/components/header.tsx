@@ -131,8 +131,8 @@ export const Header = ({ locale }: { locale: string }) => {
       ),
     },
     {
-      text: "Contact@nordiexpresslimousine.dk",
-      link: "mailto:Contact@nordiexpresslimousine.dk",
+      text: "Contact@nordicxpresslimousine.dk",
+      link: "mailto:Contact@nordicxpresslimousine.dk",
       icon: (
         <svg
           className="shrink-0"

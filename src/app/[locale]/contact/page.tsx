@@ -126,9 +126,9 @@ const Contact = ({ params: { locale } }: NextPageProps) => {
                 />
               </svg>
 
-              <Link href="mailto:Contact@nordiexpresslimousine.dk">
+              <Link href="mailto:Contact@nordicxpresslimousine.dk">
                 <span className="leading-relaxed">
-                  Contact@nordiexpresslimousine.dk
+                  Contact@nordicxpresslimousine.dk
                 </span>
               </Link>
             </div>
