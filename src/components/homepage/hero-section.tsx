@@ -1,17 +1,30 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { useEffect, useRef } from "react";
 
 export const HeroSection = () => {
   const t = useTranslations("homepage.hero_section");
   const tGeneral = useTranslations("general");
 
+  const refVideo = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (refVideo.current) {
+      refVideo.current.currentTime = 0; // Reset video to the beginning
+      refVideo.current.play(); // Play the video
+    }
+  }, []);
+
   return (
-    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-[#A3A7AD]">
+    <section className="relative flex flex-col items-center justify-center overflow-hidden bg-[#5B5B5B]">
       <div className="w-full">
         <div className="absolute left-0 top-0 h-full w-full bg-gradient-to-bl from-zinc-500 to-zinc-800 opacity-10"></div>
 
         <video
+          ref={refVideo}
           className="w-full"
           loop
           autoPlay
@@ -19,8 +32,8 @@ export const HeroSection = () => {
           playsInline
           preload="preload"
         >
-          <source src="/videos/hero-background-v2.mp4" type="video/mp4" />
-          <source src="/videos/hero-background-v2.webm" type="video/webm" />
+          <source src="videos/hero-background-v2.mp4" type="video/mp4" />
+          <source src="videos/hero-background-v2.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>
