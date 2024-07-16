@@ -26,7 +26,7 @@ const Contact = ({ params: { locale } }: NextPageProps) => {
     <>
       <main>
         <section
-          className="relative bg-cover bg-center py-32"
+          className="relative bg-cover bg-center py-16 sm:py-24 lg:py-32"
           style={{ backgroundImage: `url(${backgroundImg.src})` }}
         >
           <div className="px-default mx-auto max-w-section">
@@ -39,14 +39,7 @@ const Contact = ({ params: { locale } }: NextPageProps) => {
         </section>
 
         <section className="px-default mx-auto max-w-section py-16 lg:py-20">
-          {t.rich("content", {
-            h2: (chunks) => (
-              <h2 className="text-h3 mb-4 mt-10 font-bold first:!mt-0 lg:mt-14">
-                {chunks}
-              </h2>
-            ),
-            p: (chunks) => <p className="mb-4 leading-relaxed">{chunks}</p>,
-          })}
+          {t.rich("content")}
 
           <div className="space-y-2 text-left">
             <div className="flex items-start gap-3">

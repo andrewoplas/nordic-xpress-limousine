@@ -32,4 +32,12 @@ export const pathnames = {
     en: "/services",
     da: "/services",
   },
+  "/privacy-policy": {
+    en: "/privacy-policy",
+    da: "/privatlivspolitik",
+  },
+  "/terms-and-conditions": {
+    en: "/terms-and-conditions",
+    da: "/vilkaar-og-betingelser",
+  },
 } satisfies Pathnames<typeof locales>;

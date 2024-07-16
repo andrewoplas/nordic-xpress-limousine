@@ -39,7 +39,7 @@ const Career = ({ params: { locale } }: NextPageProps) => {
   return (
     <main>
       <section
-        className="relative bg-cover bg-center py-24 lg:py-32"
+        className="relative bg-cover bg-center py-16 sm:py-24 lg:py-32"
         style={{ backgroundImage: `url(${backgroundImg.src})` }}
       >
         <div className="px-default mx-auto max-w-section">

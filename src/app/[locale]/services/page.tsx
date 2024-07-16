@@ -47,7 +47,7 @@ const Services = ({ params: { locale } }: NextPageProps) => {
   return (
     <main>
       <section
-        className="relative bg-cover bg-center py-32"
+        className="relative bg-cover bg-center py-16 sm:py-24 lg:py-32"
         style={{ backgroundImage: `url(${backgroundImg.src})` }}
       >
         <div className="px-default mx-auto max-w-section">
@@ -60,14 +60,7 @@ const Services = ({ params: { locale } }: NextPageProps) => {
       </section>
 
       <section className="px-default mx-auto max-w-section py-16 lg:py-20">
-        {t.rich("description", {
-          h2: (chunks) => (
-            <h2 className="text-h3 mb-4 mt-10 font-bold first:!mt-0 lg:mt-14">
-              {chunks}
-            </h2>
-          ),
-          p: (chunks) => <p className="mb-4 leading-relaxed">{chunks}</p>,
-        })}
+        {t.rich("description")}
 
         <div className="mt-16 grid grid-cols-1 gap-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           {[
