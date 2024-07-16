@@ -17,10 +17,10 @@ export const HeroSection = () => {
           autoPlay
           muted
           playsInline
-          preload="none"
+          preload="preload"
         >
-          <source src="videos/hero-background-v2.mp4" type="video/mp4" />
-          <source src="videos/hero-background-v2.webm" type="video/webm" />
+          <source src="/videos/hero-background-v2.mp4" type="video/mp4" />
+          <source src="/videos/hero-background-v2.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

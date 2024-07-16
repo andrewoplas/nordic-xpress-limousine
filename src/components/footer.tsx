@@ -25,7 +25,10 @@ export const Footer = () => {
   const informationMenu = [
     { text: t("contact"), link: "/contact" },
     { text: t("faq"), link: "/faq" },
-    { text: t("booking"), link: "https://www.booking.nordicxpresslimousine.dk/en/booking/" },
+    {
+      text: t("booking"),
+      link: "https://www.booking.nordicxpresslimousine.dk/en/booking/",
+    },
     { text: t("terms_and_conditions"), link: "/terms-and-conditions" },
     { text: t("privacy_policy"), link: "/privacy-policy" },
   ];
@@ -40,6 +43,7 @@ export const Footer = () => {
             <div className="space-y-2 text-left">
               <div className="flex items-start gap-3">
                 <svg
+                  className="shrink-0"
                   width="12"
                   height="16"
                   viewBox="0 0 12 16"
@@ -71,6 +75,7 @@ export const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <svg
+                  className="shrink-0"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -104,6 +109,7 @@ export const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <svg
+                  className="shrink-0"
                   width="16"
                   height="12"
                   viewBox="0 0 16 12"
