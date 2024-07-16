@@ -25,7 +25,7 @@ export const Footer = () => {
   const informationMenu = [
     { text: t("contact"), link: "/contact" },
     { text: t("faq"), link: "/faq" },
-    { text: t("booking"), link: "#" },
+    { text: t("booking"), link: "https://www.booking.nordicxpresslimousine.dk/en/booking/" },
     { text: t("terms_and_conditions"), link: "#" },
     { text: t("privacy_policy"), link: "#" },
   ];
