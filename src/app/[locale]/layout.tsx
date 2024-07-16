@@ -3,7 +3,7 @@ import { Header } from "@/components/header";
 import { jsonLd } from "@/lib/config";
 import { getSiteName } from "@/lib/helper";
 import { locales } from "@/lib/i18n/pathnames";
-import type { Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -31,7 +31,13 @@ export async function generateMetadata(props: { params: { locale: string } }) {
     title: getSiteName(),
     description: t("meta_description"),
     metadataBase: new URL("https://www.nordicxpresslimousine.dk"),
-    openGraph: { images: openGraph.src },
+    openGraph: {
+      images: [
+        {
+          url: openGraph.src,
+        },
+      ],
+    },
     icons: [
       {
         rel: "apple-touch-icon",
