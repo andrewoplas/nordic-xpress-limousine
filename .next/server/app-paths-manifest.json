@@ -1,14 +1,14 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/icon.ico/route": "app/icon.ico/route.js",
   "/robots.txt/route": "app/robots.txt/route.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
-  "/[locale]/career/page": "app/[locale]/career/page.js",
-  "/[locale]/contact/page": "app/[locale]/contact/page.js",
-  "/[locale]/page": "app/[locale]/page.js",
-  "/[locale]/services/page": "app/[locale]/services/page.js",
-  "/[locale]/chauffeurs/page": "app/[locale]/chauffeurs/page.js",
   "/[locale]/car-fleet/page": "app/[locale]/car-fleet/page.js",
+  "/[locale]/career/page": "app/[locale]/career/page.js",
+  "/[locale]/chauffeurs/page": "app/[locale]/chauffeurs/page.js",
+  "/[locale]/contact/page": "app/[locale]/contact/page.js",
+  "/[locale]/services/page": "app/[locale]/services/page.js",
   "/[locale]/faq/page": "app/[locale]/faq/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
   "/[locale]/about-us/page": "app/[locale]/about-us/page.js"
 }
