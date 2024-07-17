@@ -10,11 +10,11 @@ export const CtaSection = () => {
 
   const stats = [
     {
-      value: "24.868",
+      value: "46.878",
       label: t("stats_section.transfers"),
     },
     {
-      value: "409",
+      value: "394",
       label: t("stats_section.city_covered"),
     },
     {
