@@ -54,14 +54,6 @@
       "static/chunks/357-95799df54576684b.js",
       "static/chunks/app/[locale]/chauffeurs/page-3941b64cefb6488a.js"
     ],
-    "/[locale]/contact/page": [
-      "static/chunks/webpack-78d7a5087fe0a3f6.js",
-      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
-      "static/chunks/23-a86e82b793cada7a.js",
-      "static/chunks/main-app-503a89a040141ba4.js",
-      "static/chunks/357-95799df54576684b.js",
-      "static/chunks/app/[locale]/contact/page-08287a7b533921f7.js"
-    ],
     "/[locale]/faq/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
       "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
@@ -82,6 +74,22 @@
       "static/chunks/243-5dfe53ac6d06d690.js",
       "static/chunks/app/[locale]/page-c1efd96a9e856e75.js"
     ],
+    "/[locale]/contact/page": [
+      "static/chunks/webpack-78d7a5087fe0a3f6.js",
+      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
+      "static/chunks/23-a86e82b793cada7a.js",
+      "static/chunks/main-app-503a89a040141ba4.js",
+      "static/chunks/357-95799df54576684b.js",
+      "static/chunks/app/[locale]/contact/page-08287a7b533921f7.js"
+    ],
+    "/[locale]/terms-and-conditions/page": [
+      "static/chunks/webpack-78d7a5087fe0a3f6.js",
+      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
+      "static/chunks/23-a86e82b793cada7a.js",
+      "static/chunks/main-app-503a89a040141ba4.js",
+      "static/chunks/357-95799df54576684b.js",
+      "static/chunks/app/[locale]/terms-and-conditions/page-4a3cbb8fe866e2e0.js"
+    ],
     "/[locale]/privacy-policy/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
       "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
@@ -97,14 +105,6 @@
       "static/chunks/357-95799df54576684b.js",
       "static/chunks/173-cad400ac9eaedd70.js",
       "static/chunks/app/[locale]/services/page-b1be3c30ba430a00.js"
-    ],
-    "/[locale]/terms-and-conditions/page": [
-      "static/chunks/webpack-78d7a5087fe0a3f6.js",
-      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
-      "static/chunks/23-a86e82b793cada7a.js",
-      "static/chunks/main-app-503a89a040141ba4.js",
-      "static/chunks/357-95799df54576684b.js",
-      "static/chunks/app/[locale]/terms-and-conditions/page-4a3cbb8fe866e2e0.js"
     ],
     "/[locale]/about-us/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",

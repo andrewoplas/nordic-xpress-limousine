@@ -73,10 +73,7 @@ export const ServicesSection = () => {
           {t("cta.heading")}
         </h3>
 
-        <Button
-          aria-label={t("cta.button_text")}
-          className="shadow-[0px 4px 8px 0px rgba(0, 0, 0, 0.15)] rounded-full bg-app-orange px-6 py-2 text-sm font-semibold uppercase leading-7 text-white transition-all hover:saturate-150 md:px-7 md:py-3"
-        >
+        <Button asChild aria-label={t("cta.button_text")}>
           <Link href="/services">{t("cta.button_text")}</Link>
         </Button>
       </div>
