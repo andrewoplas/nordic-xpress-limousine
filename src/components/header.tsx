@@ -247,7 +247,7 @@ export const Header = ({ locale }: { locale: string }) => {
                       className="flex items-center"
                     >
                       <User className="mr-2 h-4 w-4" />
-                      <span>Private User</span>
+                      <span>Private Clients</span>
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="focus:bg-app-orange focus:text-white">
@@ -257,7 +257,7 @@ export const Header = ({ locale }: { locale: string }) => {
                       className="flex items-center"
                     >
                       <BriefcaseBusiness className="mr-2 h-4 w-4" />
-                      <span>Business User</span>
+                      <span>Business Clients</span>
                     </Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>

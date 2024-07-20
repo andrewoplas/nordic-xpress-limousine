@@ -29,7 +29,7 @@
       "static/chunks/243-b8b7a6aa8e5a94dc.js",
       "static/chunks/17-64a25c0bfb24cdf5.js",
       "static/chunks/454-a623e12c47ae3e05.js",
-      "static/chunks/app/[locale]/layout-62eb34063479d040.js"
+      "static/chunks/app/[locale]/layout-12f8f8c4b98102e5.js"
     ],
     "/[locale]/not-found": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
@@ -37,14 +37,6 @@
       "static/chunks/23-a86e82b793cada7a.js",
       "static/chunks/main-app-503a89a040141ba4.js",
       "static/chunks/app/[locale]/not-found-1ff5b601878b383a.js"
-    ],
-    "/[locale]/car-fleet/page": [
-      "static/chunks/webpack-78d7a5087fe0a3f6.js",
-      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
-      "static/chunks/23-a86e82b793cada7a.js",
-      "static/chunks/main-app-503a89a040141ba4.js",
-      "static/chunks/357-95799df54576684b.js",
-      "static/chunks/app/[locale]/car-fleet/page-d3916db1699d1d31.js"
     ],
     "/[locale]/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
@@ -57,6 +49,22 @@
       "static/chunks/243-b8b7a6aa8e5a94dc.js",
       "static/chunks/app/[locale]/page-c1efd96a9e856e75.js"
     ],
+    "/[locale]/chauffeurs/page": [
+      "static/chunks/webpack-78d7a5087fe0a3f6.js",
+      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
+      "static/chunks/23-a86e82b793cada7a.js",
+      "static/chunks/main-app-503a89a040141ba4.js",
+      "static/chunks/357-95799df54576684b.js",
+      "static/chunks/app/[locale]/chauffeurs/page-3941b64cefb6488a.js"
+    ],
+    "/[locale]/contact/page": [
+      "static/chunks/webpack-78d7a5087fe0a3f6.js",
+      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
+      "static/chunks/23-a86e82b793cada7a.js",
+      "static/chunks/main-app-503a89a040141ba4.js",
+      "static/chunks/357-95799df54576684b.js",
+      "static/chunks/app/[locale]/contact/page-08287a7b533921f7.js"
+    ],
     "/[locale]/faq/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
       "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
@@ -65,6 +73,21 @@
       "static/chunks/506-4899159e594c87ef.js",
       "static/chunks/17-64a25c0bfb24cdf5.js",
       "static/chunks/app/[locale]/faq/page-0e2e46ea2613d8fb.js"
+    ],
+    "/[locale]/car-fleet/page": [
+      "static/chunks/webpack-78d7a5087fe0a3f6.js",
+      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
+      "static/chunks/23-a86e82b793cada7a.js",
+      "static/chunks/main-app-503a89a040141ba4.js",
+      "static/chunks/357-95799df54576684b.js",
+      "static/chunks/app/[locale]/car-fleet/page-d3916db1699d1d31.js"
+    ],
+    "/[locale]/privacy-policy/page": [
+      "static/chunks/webpack-78d7a5087fe0a3f6.js",
+      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
+      "static/chunks/23-a86e82b793cada7a.js",
+      "static/chunks/main-app-503a89a040141ba4.js",
+      "static/chunks/app/[locale]/privacy-policy/page-3063c8635f0f7203.js"
     ],
     "/[locale]/services/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
@@ -75,22 +98,6 @@
       "static/chunks/173-cad400ac9eaedd70.js",
       "static/chunks/app/[locale]/services/page-b1be3c30ba430a00.js"
     ],
-    "/[locale]/contact/page": [
-      "static/chunks/webpack-78d7a5087fe0a3f6.js",
-      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
-      "static/chunks/23-a86e82b793cada7a.js",
-      "static/chunks/main-app-503a89a040141ba4.js",
-      "static/chunks/357-95799df54576684b.js",
-      "static/chunks/app/[locale]/contact/page-08287a7b533921f7.js"
-    ],
-    "/[locale]/chauffeurs/page": [
-      "static/chunks/webpack-78d7a5087fe0a3f6.js",
-      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
-      "static/chunks/23-a86e82b793cada7a.js",
-      "static/chunks/main-app-503a89a040141ba4.js",
-      "static/chunks/357-95799df54576684b.js",
-      "static/chunks/app/[locale]/chauffeurs/page-3941b64cefb6488a.js"
-    ],
     "/[locale]/terms-and-conditions/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
       "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
@@ -98,13 +105,6 @@
       "static/chunks/main-app-503a89a040141ba4.js",
       "static/chunks/357-95799df54576684b.js",
       "static/chunks/app/[locale]/terms-and-conditions/page-4a3cbb8fe866e2e0.js"
-    ],
-    "/[locale]/privacy-policy/page": [
-      "static/chunks/webpack-78d7a5087fe0a3f6.js",
-      "static/chunks/fd9d1056-c4050f5b61ad0a3b.js",
-      "static/chunks/23-a86e82b793cada7a.js",
-      "static/chunks/main-app-503a89a040141ba4.js",
-      "static/chunks/app/[locale]/privacy-policy/page-3063c8635f0f7203.js"
     ],
     "/[locale]/about-us/page": [
       "static/chunks/webpack-78d7a5087fe0a3f6.js",
