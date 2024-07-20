@@ -11,10 +11,18 @@ import { BriefcaseBusiness, CircleUser, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link as NavigationLink, usePathname } from "../lib/i18n/navigation";
 import { Button } from "./ui/button";
 import siteLogoImg from "/public/images/site-logo-hd.png";
+import pluginConfig from "./cookie-consent/cookie-consent-config";
+import {
+  reset,
+  run,
+  setLanguage,
+  show,
+  showPreferences,
+} from "vanilla-cookieconsent";
 
 const languages = [
   {
@@ -151,6 +159,18 @@ export const Header = ({ locale }: { locale: string }) => {
     },
   ];
 
+  useEffect(() => {
+    run(pluginConfig);
+  }, []);
+
+  const changeLanguage = async (locale: string) => {
+    setTimeout(() => {
+      reset(true);
+      run(pluginConfig);
+      setLanguage(locale);
+    }, 1000);
+  };
+
   return (
     <>
       <nav className="hidden bg-black py-4 text-white lg:block">
@@ -189,6 +209,7 @@ export const Header = ({ locale }: { locale: string }) => {
                   locale={language.locale}
                   aria-label={`translate into ${language.text}`}
                   className="group flex items-center gap-2"
+                  onClick={() => changeLanguage(language.locale)}
                 >
                   <Image
                     className="shrink-0"
@@ -348,6 +369,7 @@ export const Header = ({ locale }: { locale: string }) => {
                     locale={language.locale}
                     aria-label={`translate into ${language.text}`}
                     className="group flex items-center gap-2"
+                    onClick={() => changeLanguage(language.locale)}
                   >
                     <Image
                       className="shrink-0"

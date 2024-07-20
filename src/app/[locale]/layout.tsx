@@ -1,9 +1,10 @@
+import { CookieConsentComponent } from "@/components/cookie-consent/cookie-consent";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { jsonLd } from "@/lib/config";
 import { getSiteName } from "@/lib/helper";
 import { locales } from "@/lib/i18n/pathnames";
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
@@ -14,6 +15,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import "../globals.css";
 import openGraph from "/public/images/opengraph-image.jpg";
+import "vanilla-cookieconsent/dist/cookieconsent.css";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -121,6 +123,8 @@ export default async function LocaleLayout({
           <Header locale={locale} />
           {children}
           <Footer />
+
+          <CookieConsentComponent />
         </NextIntlClientProvider>
       </body>
     </html>

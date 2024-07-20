@@ -132,9 +132,33 @@
 }
 
 .terms-and-conditions-content ol {
-  @apply list-decimal pl-4 mb-4;
+  @apply mb-4 list-decimal pl-4;
 }
 
 .terms-and-conditions-content ul {
-  @apply list-disc pl-4 mb-4;
+  @apply mb-4 list-disc pl-4;
+}
+
+#cc-main {
+  /** Change font **/
+  --cc-font-family: var(--font-family);
+
+  /** Change button primary color to black **/
+  --cc-btn-primary-bg: #f56504;
+  --cc-btn-primary-border-color: #f56504;
+  --cc-btn-primary-hover-bg: #f3843a;
+  --cc-btn-primary-hover-border-color: #f3843a;
+
+  /** Also make toggles the same color as the button **/
+  --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+
+  /** Make the buttons a bit rounder **/
+  --cc-btn-border-radius: 10px;
+}
+
+.cm__btn,
+.pm__btn,
+.pm__close-btn {
+  text-transform: uppercase !important;
+  border-radius: 99px !important;
 }
