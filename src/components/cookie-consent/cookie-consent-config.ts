@@ -36,7 +36,7 @@ const pluginConfig: CookieConsentConfig = {
     translations: {
       en: {
         consentModal: {
-          title: "Hello traveller, it's cookie time!",
+          title: "We use cookies to enhance your experience.",
           description:
             'Our website uses tracking cookies to understand how you interact with it. The tracking will be enabled only if you accept explicitly. <a href="#privacy-policy" data-cc="show-preferencesModal" class="cc__link">Manage preferences</a>',
           acceptAllBtn: "Accept all",
@@ -57,7 +57,7 @@ const pluginConfig: CookieConsentConfig = {
             {
               title: "Cookie Usage",
               description:
-                'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href=/en/privacy-policy" class="cc__link">privacy policy</a>.',
+                'We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/en/privacy-policy" class="cc__link">privacy policy</a>.',
             },
             {
               title: "Strictly necessary cookies",
@@ -96,14 +96,14 @@ const pluginConfig: CookieConsentConfig = {
             {
               title: "More information",
               description:
-                'For any queries in relation to my policy on cookies and your choices, please <a class="cc__link" href="mailto:contact@nordicxpresslimousine.dk">contact me</a>.',
+                'For any queries in relation to our policy on cookies and your choices, please <a class="cc__link" href="mailto:contact@nordicxpresslimousine.dk">contact us</a>.',
             },
           ],
         },
       },
       da: {
         consentModal: {
-          title: "Hej rejsende, det er cookie tid!",
+          title: "Vi bruger cookies til at forbedre din oplevelse.",
           description:
             'Vores hjemmeside bruger sporing cookies for at forstå, hvordan du interagerer med den. Sporingen vil kun blive aktiveret, hvis du eksplicit accepterer. <a href="#privacy-policy" data-cc="show-preferencesModal" class="cc__link">Administrer præferencer</a>',
           acceptAllBtn: "Accepter alle",
@@ -124,7 +124,7 @@ const pluginConfig: CookieConsentConfig = {
             {
               title: "Cookie-brug",
               description:
-                'Jeg bruger cookies for at sikre de grundlæggende funktioner på hjemmesiden og for at forbedre din online oplevelse. Du kan vælge for hver kategori at til- eller fravælge, når du ønsker det. For flere detaljer om cookies og andre følsomme data, læs venligst den fulde <a href="/da/privatlivspolitik" class="cc__link">privatlivspolitik</a>.',
+                'Vi bruger cookies til at sikre hjemmesidens grundlæggende funktionaliteter og for at forbedre din online oplevelse. Du kan for hver kategori vælge at til-/framelde dig, når du vil. For flere detaljer vedrørende cookies og andre følsomme data, læs venligst den fulde <a href="/da/privatlivspolitik" class="cc__link">privatlivspolitik</a>.',
             },
             {
               title: "Strengt nødvendige cookies",
@@ -163,7 +163,7 @@ const pluginConfig: CookieConsentConfig = {
             {
               title: "Mere information",
               description:
-                'For eventuelle forespørgsler i relation til min politik om cookies og dine valg, venligst <a class="cc__link" href="mailto:contact@nordicxpresslimousine.dk">kontakt mig</a>.',
+                'For eventuelle spørgsmål i forhold til vores politik om cookies og dine valg, bedes du <a class="cc__link" href="mailto:contact@nordicxpresslimousine.dk">kontakte os</a>.',
             },
           ],
         },
