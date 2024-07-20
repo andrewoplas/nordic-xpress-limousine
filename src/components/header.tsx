@@ -241,12 +241,24 @@ export const Header = ({ locale }: { locale: string }) => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-44">
                   <DropdownMenuItem className="focus:bg-app-orange focus:text-white">
-                    <User className="mr-2 h-4 w-4" />
-                    <span>Private User</span>
+                    <Link
+                      href="https://app.nordicxpresslimousine.dk/signin"
+                      target="_blank"
+                      className="flex items-center"
+                    >
+                      <User className="mr-2 h-4 w-4" />
+                      <span>Private User</span>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem className="focus:bg-app-orange focus:text-white">
-                    <BriefcaseBusiness className="mr-2 h-4 w-4" />
-                    <span>Business User</span>
+                    <Link
+                      href="https://app.nordicxpresslimousine.dk/signin"
+                      target="_blank"
+                      className="flex items-center"
+                    >
+                      <BriefcaseBusiness className="mr-2 h-4 w-4" />
+                      <span>Business User</span>
+                    </Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
