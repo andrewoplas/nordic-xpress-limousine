@@ -1,0 +1,13 @@
+ssh -i keys/id_rsa -p 222 andrewmoplas@server13.chosting.dk
+
+~/.ssh/id_nordicxp
+
+ssh -vvv -i ~/.ssh/id_nordicxp -o IdentitiesOnly=yes -p 222 andrewmoplas@server13.chosting.dk
+ssh -vvv -i ~/.ssh/id_nordicxp -o IdentitiesOnly=yes -p 222 andrewmoplas@server13.chosting.dk
+
+ssh -vvv -i keys/id_rsa -p 222 andrewmoplas@server13.chosting.dk
+
+
+pw: carldrew14
+
+rm -r nordic-xpress-limousine-old
